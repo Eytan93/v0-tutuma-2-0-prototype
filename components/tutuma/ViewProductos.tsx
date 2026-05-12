@@ -43,10 +43,10 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
         <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-4 font-sans">
           Explorador Narrativo
         </p>
-        <h1 className="font-serif text-5xl md:text-6xl text-[#1A1A1A] mb-4 text-balance">
+        <h1 className="font-serif text-6xl md:text-7xl text-[#1A1A1A] mb-4 text-balance font-bold">
           Marcas de Origen
         </h1>
-        <p className="font-sans text-[#1A1A1A]/50 text-sm leading-relaxed mb-16 max-w-lg">
+        <p className="font-sans text-lg md:text-xl text-[#1A1A1A]/60 leading-relaxed mb-16 max-w-2xl">
           Cuatro expresiones del territorio oaxaqueño. Selecciona una marca para explorar
           su colección completa con perfil sensorial detallado.
         </p>
@@ -59,23 +59,23 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
               className="group bg-[#F3F0DF] hover:bg-[#1A1A1A] transition-colors duration-500 p-10 text-left"
             >
               <div
-                className="w-1 h-10 mb-8 transition-none"
+                className="w-1.5 h-10 mb-8 transition-none"
                 style={{ backgroundColor: brand.accentColor }}
               />
               <p
-                className="text-xs tracking-[0.3em] uppercase mb-2 font-sans group-hover:opacity-80 transition-opacity"
+                className="text-xs tracking-[0.3em] uppercase mb-2 font-semibold font-sans group-hover:opacity-80 transition-opacity"
                 style={{ color: brand.accentColor }}
               >
                 {brand.region} · {brand.state}
               </p>
-              <h2 className="font-serif text-4xl text-[#1A1A1A] group-hover:text-[#F3F0DF] mb-4 transition-colors duration-500">
+              <h2 className="font-serif text-4xl md:text-5xl text-[#1A1A1A] group-hover:text-[#F3F0DF] mb-4 transition-colors duration-500 font-bold">
                 {brand.name}
               </h2>
-              <p className="text-sm text-[#1A1A1A]/50 group-hover:text-[#F3F0DF]/50 leading-relaxed mb-6 transition-colors duration-500 font-sans">
+              <p className="text-base md:text-lg text-[#1A1A1A]/60 group-hover:text-[#F3F0DF]/60 leading-relaxed mb-6 transition-colors duration-500 font-sans">
                 {brand.description}
               </p>
               <div className="flex items-center gap-2 text-[#1A1A1A]/30 group-hover:text-[#FACC15] transition-colors duration-500">
-                <span className="text-xs tracking-[0.2em] uppercase font-sans">
+                <span className="text-xs tracking-[0.2em] uppercase font-semibold font-sans">
                   {brand.products.length} expresiones
                 </span>
                 <ArrowRight size={12} />

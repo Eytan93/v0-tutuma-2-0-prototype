@@ -68,10 +68,10 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
       {/* ── Los 7 Capítulos — immersive photo cards ── */}
       <section className="bg-[#F3F0DF] text-[#1A1A1A] py-24 px-6 md:px-16 lg:px-24">
         <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-3 font-sans">El Sistema</p>
-        <h2 className="font-serif text-4xl md:text-5xl mb-4 text-balance">
+        <h2 className="font-serif text-5xl md:text-6xl mb-4 text-balance font-bold">
           Siete capítulos del origen
         </h2>
-        <p className="font-sans text-[#1A1A1A]/50 text-sm leading-relaxed max-w-md mb-16">
+        <p className="font-sans text-lg md:text-xl text-[#1A1A1A]/60 leading-relaxed max-w-2xl mb-16">
           El mezcal artesanal no se entiende en una etiqueta. Se entiende en siete momentos
           que van desde la tierra hasta tu copa.
         </p>
@@ -94,17 +94,17 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
                 {/* Gradient overlay from bottom */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/20 to-transparent" />
                 {/* Chapter number — top left */}
-                <span className="absolute top-5 left-5 font-serif text-[#F3F0DF]/40 text-xs tracking-[0.3em]">
+                <span className="absolute top-5 left-5 font-serif text-[#F3F0DF]/50 text-sm md:text-base tracking-[0.3em] font-semibold">
                   {cap.number}
                 </span>
                 {/* Title overlaid on photo */}
-                <h3 className="absolute bottom-5 left-5 font-serif text-2xl md:text-3xl text-[#F3F0DF] leading-tight">
+                <h3 className="absolute bottom-5 left-5 font-serif text-3xl md:text-4xl text-[#F3F0DF] leading-tight font-bold">
                   {cap.title}
                 </h3>
               </div>
               {/* Description below photo */}
               <div className="bg-[#EDEADE] px-6 py-6 border-b border-[#C8C4B0]">
-                <p className="font-sans text-sm leading-relaxed text-[#1A1A1A]/65">
+                <p className="font-sans text-base md:text-lg leading-relaxed text-[#1A1A1A]/70">
                   {cap.description}
                 </p>
               </div>

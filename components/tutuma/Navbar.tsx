@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
@@ -28,13 +29,21 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C]">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <button
           onClick={() => handleNavigate('sistema')}
-          className="font-serif text-2xl tracking-[0.3em] text-[#F3F0DF] uppercase hover:text-[#FACC15] transition-colors duration-300"
+          className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300"
+          title="Ir a inicio"
         >
-          Tutuma
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/TUTUMA-HORIZONTE-SUSTENTABLE-RGB_CREMA-7tT3OOqTBSgsyCnZ4rMCFFxdgYFFph.png"
+            alt="Tutuma - Horizonte Sustentable"
+            width={120}
+            height={50}
+            priority
+            className="h-auto w-auto"
+          />
         </button>
 
         {/* Desktop Nav */}

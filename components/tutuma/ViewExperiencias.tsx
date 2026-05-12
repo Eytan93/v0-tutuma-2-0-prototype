@@ -179,11 +179,11 @@ export default function ViewExperiencias() {
       {/* Hero */}
       <section className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto py-16 border-b border-[#2C2C2C]">
         <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-6 font-sans">Experiencias</p>
-        <h1 className="font-serif text-[clamp(2.5rem,8vw,6rem)] leading-[0.95] tracking-tight mb-6 text-balance">
+        <h1 className="font-serif text-[clamp(2.5rem,10vw,7rem)] leading-[0.95] tracking-tight mb-6 text-balance font-bold">
           No es cata.<br />
           <em className="italic text-[#FACC15]">Es territorio.</em>
         </h1>
-        <p className="font-sans text-[#F3F0DF]/50 text-sm leading-relaxed max-w-md">
+        <p className="font-sans text-lg md:text-xl text-[#F3F0DF]/60 leading-relaxed max-w-2xl">
           Una sesión guiada de dos horas y media que no enseña a beber mezcal — te enseña
           a leer el paisaje oaxaqueño en un vaso.
         </p>
@@ -194,33 +194,33 @@ export default function ViewExperiencias() {
         <div className="grid md:grid-cols-2 gap-16">
           {/* Left: info */}
           <div>
-            <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/30 mb-4 font-sans">Inversión</p>
-            <p className="font-serif text-7xl text-[#FACC15] mb-1">$1,300</p>
-            <p className="text-sm text-[#F3F0DF]/30 font-sans mb-10">
+            <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/30 mb-4 font-semibold font-sans">Inversión</p>
+            <p className="font-serif text-8xl md:text-9xl text-[#FACC15] mb-1 font-bold leading-none">$1,300</p>
+            <p className="text-lg md:text-xl text-[#F3F0DF]/40 font-sans mb-10">
               MXN por persona · Incluye 5 destilados
             </p>
 
-            <div className="grid grid-cols-2 gap-6 mb-10">
+            <div className="grid grid-cols-2 gap-8 mb-12">
               {details.map(({ icon: Icon, label, value }) => (
-                <div key={label} className="border-t border-[#F3F0DF]/10 pt-5">
-                  <Icon size={13} className="text-[#6B7F5E] mb-3" />
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 mb-1 font-sans">
+                <div key={label} className="border-t border-[#F3F0DF]/10 pt-6">
+                  <Icon size={16} className="text-[#6B7F5E] mb-4" />
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-[#F3F0DF]/40 mb-2 font-semibold font-sans">
                     {label}
                   </p>
-                  <p className="font-serif text-base text-[#F3F0DF]">{value}</p>
+                  <p className="font-serif text-lg md:text-xl text-[#F3F0DF] font-bold">{value}</p>
                 </div>
               ))}
             </div>
 
             {/* Reservation confirmation */}
             {reserved ? (
-              <div className="flex items-center gap-3 bg-[#6B7F5E]/20 border border-[#6B7F5E]/40 px-6 py-4">
-                <Check size={14} className="text-[#6B7F5E] shrink-0" />
+              <div className="flex items-center gap-3 bg-[#6B7F5E]/20 border border-[#6B7F5E]/40 px-8 py-5 rounded-sm">
+                <Check size={16} className="text-[#6B7F5E] shrink-0" />
                 <div>
-                  <p className="font-sans text-xs text-[#F3F0DF] font-medium">
+                  <p className="font-sans text-sm text-[#F3F0DF] font-bold">
                     Solicitud enviada
                   </p>
-                  <p className="font-sans text-xs text-[#F3F0DF]/40 mt-0.5">
+                  <p className="font-sans text-xs text-[#F3F0DF]/50 mt-1">
                     {selectedDate?.toLocaleDateString('es-MX', {
                       weekday: 'long',
                       day: 'numeric',
@@ -234,10 +234,10 @@ export default function ViewExperiencias() {
               <button
                 onClick={handleReserve}
                 disabled={!selectedDate}
-                className={`w-full md:w-auto px-10 py-4 text-xs tracking-[0.2em] uppercase font-semibold transition-all duration-300 font-sans ${
+                className={`w-full md:w-auto px-12 py-5 text-sm tracking-[0.2em] uppercase font-bold transition-all duration-300 font-sans ${
                   selectedDate
                     ? 'bg-[#FACC15] text-[#1A1A1A] hover:bg-[#F3F0DF]'
-                    : 'bg-[#2C2C2C] text-[#F3F0DF]/20 cursor-not-allowed'
+                    : 'bg-[#2C2C2C] text-[#F3F0DF]/30 cursor-not-allowed'
                 }`}
               >
                 {selectedDate ? 'Reservar Lugar' : 'Selecciona una fecha'}
@@ -247,7 +247,7 @@ export default function ViewExperiencias() {
 
           {/* Right: calendar */}
           <div>
-            <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/30 mb-4 font-sans">
+            <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/30 mb-4 font-semibold font-sans">
               Calendario de Fechas
             </p>
             <InteractiveCalendar
@@ -255,7 +255,7 @@ export default function ViewExperiencias() {
               onSelect={(d) => { setSelectedDate(d); setReserved(false) }}
             />
             {selectedDate && (
-              <p className="mt-3 text-xs text-[#FACC15] font-sans tracking-wide">
+              <p className="mt-4 text-sm md:text-base text-[#FACC15] font-sans tracking-wide font-semibold">
                 Fecha seleccionada:{' '}
                 {selectedDate.toLocaleDateString('es-MX', {
                   weekday: 'long',
@@ -270,21 +270,21 @@ export default function ViewExperiencias() {
 
       {/* Itinerary */}
       <section className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto py-16">
-        <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-12 font-sans">Itinerario</p>
+        <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-12 font-semibold font-sans">Itinerario</p>
         <div>
           {itinerary.map((step, i) => (
             <div
               key={i}
-              className="flex flex-col md:flex-row gap-4 md:gap-12 border-b border-[#F3F0DF]/10 py-8 group"
+              className="flex flex-col md:flex-row gap-6 md:gap-12 border-b border-[#F3F0DF]/10 py-10 group"
             >
-              <span className="font-mono text-xs text-[#F3F0DF]/20 md:w-16 shrink-0 pt-1">
+              <span className="font-mono text-xs text-[#F3F0DF]/30 md:w-20 shrink-0 pt-1 font-semibold">
                 {step.time}
               </span>
               <div>
-                <h3 className="font-serif text-xl text-[#F3F0DF] mb-2 group-hover:text-[#FACC15] transition-colors duration-300">
+                <h3 className="font-serif text-2xl md:text-3xl text-[#F3F0DF] mb-3 group-hover:text-[#FACC15] transition-colors duration-300 font-bold">
                   {step.title}
                 </h3>
-                <p className="text-sm text-[#F3F0DF]/40 leading-relaxed font-sans">{step.desc}</p>
+                <p className="text-base md:text-lg text-[#F3F0DF]/50 leading-relaxed font-sans">{step.desc}</p>
               </div>
             </div>
           ))}
@@ -293,12 +293,12 @@ export default function ViewExperiencias() {
 
       {/* Closing quote */}
       <section className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
-        <div className="bg-[#2C2C2C] p-10">
-          <p className="font-serif text-xl italic text-[#F3F0DF]/60 leading-relaxed text-balance">
+        <div className="bg-[#2C2C2C] p-12 md:p-16">
+          <p className="font-serif text-2xl md:text-3xl italic text-[#F3F0DF]/70 leading-relaxed text-balance">
             &ldquo;No se explica el mezcal. Se escucha. Cada trago es una conversación entre
             el maguey, la tierra y quien lo destila.&rdquo;
           </p>
-          <p className="text-xs tracking-[0.2em] uppercase text-[#6B7F5E] mt-6 font-sans">
+          <p className="text-xs tracking-[0.2em] uppercase text-[#6B7F5E] mt-8 font-semibold font-sans">
             — Equipo Tutuma
           </p>
         </div>

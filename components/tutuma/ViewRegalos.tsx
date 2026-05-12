@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { Gift, Building2, BookOpen, ArrowRight } from 'lucide-react'
 
 const kits = [
@@ -50,14 +51,25 @@ const corporate = [
 
 export default function ViewRegalos() {
   return (
-    <main className="min-h-screen bg-[#F3F0DF] pt-24 pb-24">
+    <main className="min-h-screen bg-[#F3F0DF] pt-24 pb-24 relative overflow-hidden">
+      {/* Background image with overlay */}
+      <Image
+        src="/images/bg-regalos.jpg"
+        alt="Cajas de regalo de mezcal artesanal"
+        fill
+        className="object-cover object-center absolute inset-0 -z-10"
+        sizes="100vw"
+        priority={false}
+      />
+      <div className="absolute inset-0 bg-[#F3F0DF]/85 -z-10" />
+
       {/* Header */}
       <section className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto py-16 border-b border-[#C8C4B0]">
         <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-4 font-sans">Regalos</p>
-        <h1 className="font-serif text-5xl md:text-6xl text-[#1A1A1A] mb-6 text-balance">
+        <h1 className="font-serif text-6xl md:text-7xl text-[#1A1A1A] mb-6 text-balance font-bold">
           Regala territorio.<br />No solo una botella.
         </h1>
-        <p className="font-sans text-[#1A1A1A]/50 text-sm leading-relaxed max-w-md">
+        <p className="font-sans text-lg md:text-xl text-[#1A1A1A]/60 leading-relaxed max-w-2xl">
           Kits de degustación curados con su Tarjeta Explicativa del Sistema. El contexto es parte del regalo.
         </p>
       </section>
@@ -72,42 +84,42 @@ export default function ViewRegalos() {
               className={`p-10 flex flex-col ${kit.featured ? 'bg-[#1A1A1A] text-[#F3F0DF]' : 'bg-[#F3F0DF] text-[#1A1A1A]'}`}
             >
               {kit.featured && (
-                <span className="text-xs tracking-[0.3em] uppercase text-[#FACC15] mb-4 font-sans">
+                <span className="text-xs tracking-[0.3em] uppercase text-[#FACC15] mb-4 font-semibold font-sans">
                   Más completo
                 </span>
               )}
-              <h2 className={`font-serif text-3xl mb-1 ${kit.featured ? 'text-[#F3F0DF]' : 'text-[#1A1A1A]'}`}>
+              <h2 className={`font-serif text-3xl md:text-4xl mb-2 font-bold ${kit.featured ? 'text-[#F3F0DF]' : 'text-[#1A1A1A]'}`}>
                 {kit.name}
               </h2>
-              <p className={`text-xs tracking-[0.2em] uppercase mb-6 font-sans ${kit.featured ? 'text-[#F3F0DF]/40' : 'text-[#1A1A1A]/40'}`}>
+              <p className={`text-xs tracking-[0.2em] uppercase mb-6 font-semibold font-sans ${kit.featured ? 'text-[#F3F0DF]/50' : 'text-[#1A1A1A]/50'}`}>
                 {kit.subtitle}
               </p>
-              <p className={`text-sm leading-relaxed mb-8 font-sans ${kit.featured ? 'text-[#F3F0DF]/60' : 'text-[#1A1A1A]/60'}`}>
+              <p className={`text-base md:text-lg leading-relaxed mb-8 font-sans ${kit.featured ? 'text-[#F3F0DF]/70' : 'text-[#1A1A1A]/70'}`}>
                 {kit.description}
               </p>
-              <ul className="space-y-2 mb-10">
+              <ul className="space-y-3 mb-10">
                 {kit.contents.map((item) => (
-                  <li key={item} className={`text-xs flex gap-2 font-sans ${kit.featured ? 'text-[#F3F0DF]/50' : 'text-[#1A1A1A]/50'}`}>
-                    <span className="text-[#FACC15] shrink-0">—</span>
+                  <li key={item} className={`text-sm flex gap-3 font-sans ${kit.featured ? 'text-[#F3F0DF]/60' : 'text-[#1A1A1A]/60'}`}>
+                    <span className="text-[#FACC15] shrink-0 font-bold text-lg">—</span>
                     {item}
                   </li>
                 ))}
               </ul>
               <div className="mt-auto pt-6 border-t border-current/10 flex items-end justify-between">
                 <div>
-                  <p className={`font-serif text-3xl ${kit.featured ? 'text-[#FACC15]' : 'text-[#1A1A1A]'}`}>
+                  <p className={`font-serif text-4xl md:text-5xl font-bold ${kit.featured ? 'text-[#FACC15]' : 'text-[#1A1A1A]'}`}>
                     ${kit.price.toLocaleString()}
                   </p>
-                  <p className={`text-xs font-sans ${kit.featured ? 'text-[#F3F0DF]/30' : 'text-[#1A1A1A]/30'}`}>MXN</p>
+                  <p className={`text-xs font-semibold font-sans ${kit.featured ? 'text-[#F3F0DF]/40' : 'text-[#1A1A1A]/40'}`}>MXN</p>
                 </div>
                 <button
-                  className={`flex items-center gap-2 px-6 py-3 text-xs tracking-[0.15em] uppercase transition-colors duration-300 font-sans ${
+                  className={`flex items-center gap-2 px-8 py-4 text-xs tracking-[0.15em] uppercase font-semibold transition-colors duration-300 font-sans ${
                     kit.featured
                       ? 'bg-[#FACC15] text-[#1A1A1A] hover:bg-[#F3F0DF]'
                       : 'bg-[#1A1A1A] text-[#F3F0DF] hover:bg-[#FACC15] hover:text-[#1A1A1A]'
                   }`}
                 >
-                  Adquirir <ArrowRight size={10} />
+                  Adquirir <ArrowRight size={12} />
                 </button>
               </div>
             </div>
@@ -120,9 +132,9 @@ export default function ViewRegalos() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {corporate.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="border-t border-[#C8C4B0] pt-8">
-              <Icon size={18} className="text-[#6B7F5E] mb-6" />
-              <h3 className="font-serif text-xl text-[#1A1A1A] mb-3">{title}</h3>
-              <p className="font-sans text-sm text-[#1A1A1A]/50 leading-relaxed">{desc}</p>
+              <Icon size={22} className="text-[#6B7F5E] mb-6" />
+              <h3 className="font-serif text-2xl text-[#1A1A1A] mb-3 font-bold">{title}</h3>
+              <p className="font-sans text-base md:text-lg text-[#1A1A1A]/60 leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
