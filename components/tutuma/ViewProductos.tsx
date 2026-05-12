@@ -104,16 +104,6 @@ function BrandView({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
-
-        {/* Botón de regreso */}
-        <button
-          onClick={onBack}
-          className="flex items-center gap-3 mb-16 text-[#FACC15] hover:text-white transition-colors text-sm tracking-[0.15em] uppercase font-bold font-sans"
-        >
-          <ArrowLeft size={18} />
-          Todos los Colectivos
-        </button>
-
         <div className="mb-20">
           <div className="w-1.5 h-12 mb-8" style={{ backgroundColor: brand.accentColor }} />
           <p className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans" style={{ color: brand.accentColor }}>
@@ -192,25 +182,6 @@ function ProductDetail({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
-
-        {/* Botones de regreso */}
-        <div className="flex items-center gap-4 mb-16 flex-wrap">
-          <button
-            onClick={onBackToBrands}
-            className="flex items-center gap-3 text-[#FACC15] hover:text-white transition-colors text-sm tracking-[0.15em] uppercase font-bold font-sans"
-          >
-            <ArrowLeft size={18} />
-            Todos los Colectivos
-          </button>
-          <span className="text-[#F3F0DF]/20">/</span>
-          <button
-            onClick={onBack}
-            className="text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-sm tracking-[0.15em] uppercase font-bold font-sans"
-          >
-            {brand.name}
-          </button>
-        </div>
-
         <div className="w-1.5 h-10 mb-8" style={{ backgroundColor: brand.accentColor }} />
         <p className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans" style={{ color: brand.accentColor }}>
           {brand.name} · {brand.region}, {brand.state}
