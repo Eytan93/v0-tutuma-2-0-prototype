@@ -104,6 +104,16 @@ function BrandView({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
+        
+        {/* Back button to all brands */}
+        <button
+          onClick={onBack}
+          className="mb-12 inline-flex items-center gap-2 px-4 py-2 rounded border border-[#FACC15] text-[#FACC15] hover:bg-[#FACC15] hover:text-[#1A1A1A] transition-all font-semibold text-sm"
+        >
+          <ArrowLeft size={16} />
+          Todos los Colectivos
+        </button>
+
         <div className="mb-20">
           <div className="w-1.5 h-12 mb-8" style={{ backgroundColor: brand.accentColor }} />
           <p className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans" style={{ color: brand.accentColor }}>
@@ -182,6 +192,25 @@ function ProductDetail({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
+        
+        {/* Breadcrumb navigation */}
+        <div className="mb-12 flex items-center gap-3 flex-wrap">
+          <button
+            onClick={onBackToBrands}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded border border-[#FACC15] text-[#FACC15] hover:bg-[#FACC15] hover:text-[#1A1A1A] transition-all font-semibold text-sm"
+          >
+            <ArrowLeft size={16} />
+            Todos los Colectivos
+          </button>
+          <span className="text-[#F3F0DF]/30">/</span>
+          <button
+            onClick={onBack}
+            className="px-4 py-2 rounded border border-[#F3F0DF]/30 text-[#F3F0DF] hover:border-[#FACC15] hover:text-[#FACC15] transition-all font-semibold text-sm"
+          >
+            {brand.name}
+          </button>
+        </div>
+
         <div className="w-1.5 h-10 mb-8" style={{ backgroundColor: brand.accentColor }} />
         <p className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans" style={{ color: brand.accentColor }}>
           {brand.name} · {brand.region}, {brand.state}
