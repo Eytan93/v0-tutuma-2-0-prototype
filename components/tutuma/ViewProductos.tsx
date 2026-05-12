@@ -104,7 +104,7 @@ function BrandView({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
       {/* Sticky back bar */}
-      <div className="sticky top-16 z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
+      <div className="sticky top-[72px] z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto py-3">
           <button
             onClick={onBack}
@@ -231,7 +231,7 @@ function ProductDetail({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
       {/* Sticky breadcrumb bar */}
-      <div className="sticky top-16 z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
+      <div className="sticky top-[72px] z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto py-3 flex items-center gap-3">
           <button
             onClick={onBackToBrands}
