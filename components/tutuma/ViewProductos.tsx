@@ -102,38 +102,37 @@ function BrandView({
   onSelectProduct: (p: Product) => void
 }) {
   return (
-    <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
-      {/* Sticky back bar */}
-      <div className="sticky top-[72px] z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
-        <div className="max-w-7xl mx-auto py-3">
-          <button
-            onClick={onBack}
-            className="flex items-center gap-2 text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
-          >
-            <ArrowLeft size={14} />
-            Todos los Colectivos
-          </button>
-        </div>
-      </div>
+    <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto">
 
-      <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto mb-20 mt-10">
-        <div
-          className="w-1.5 h-12 mb-8"
-          style={{ backgroundColor: brand.accentColor }}
-        />
-        <p
-          className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans"
-          style={{ color: brand.accentColor }}
+        {/* Back button */}
+        <button
+          onClick={onBack}
+          className="flex items-center gap-2 text-[#F3F0DF]/50 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans mb-12"
         >
-          {brand.region} · {brand.state}
-        </p>
-        <h1 className="font-serif text-6xl md:text-7xl mb-6 font-bold">{brand.name}</h1>
-        <p className="font-sans text-lg md:text-xl text-[#F3F0DF]/60 leading-relaxed max-w-2xl">
-          {brand.description}
-        </p>
-      </div>
+          <ArrowLeft size={14} />
+          Todos los Colectivos
+        </button>
 
-      <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
+        {/* Brand header */}
+        <div className="mb-20">
+          <div
+            className="w-1.5 h-12 mb-8"
+            style={{ backgroundColor: brand.accentColor }}
+          />
+          <p
+            className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans"
+            style={{ color: brand.accentColor }}
+          >
+            {brand.region} · {brand.state}
+          </p>
+          <h1 className="font-serif text-6xl md:text-7xl mb-6 font-bold">{brand.name}</h1>
+          <p className="font-sans text-lg md:text-xl text-[#F3F0DF]/60 leading-relaxed max-w-2xl">
+            {brand.description}
+          </p>
+        </div>
+
+        {/* Products grid */}
         <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/40 mb-8 font-semibold font-sans">
           {brand.products.length} Expresiones
         </p>
@@ -154,8 +153,6 @@ function BrandView({
                     {product.agave}
                   </p>
                 )}
-                
-                {/* Preview de las notas */}
                 <div className="space-y-4 mb-8">
                   {product.notes.vista && (
                     <div>
@@ -189,7 +186,6 @@ function BrandView({
                   )}
                 </div>
               </div>
-              
               <div className="flex items-center justify-between pt-6 border-t border-[#F3F0DF]/10">
                 <div className="text-[11px] tracking-[0.15em] uppercase text-[#F3F0DF]/30 group-hover:text-[#F3F0DF]/50 transition-colors font-sans font-semibold">
                   {product.notes.vista && product.notes.nariz ? 'Vista · Nariz · Boca' : 'Perfil'}
@@ -204,6 +200,7 @@ function BrandView({
             </button>
           ))}
         </div>
+
       </div>
     </main>
   )
@@ -229,13 +226,14 @@ function ProductDetail({
   ].filter((n) => n.content)
 
   return (
-    <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
-      {/* Sticky breadcrumb bar */}
-      <div className="sticky top-[72px] z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
-        <div className="max-w-4xl mx-auto py-3 flex items-center gap-3">
+    <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
+      <div className="max-w-4xl mx-auto">
+
+        {/* Breadcrumb back navigation */}
+        <div className="flex items-center gap-3 mb-12">
           <button
             onClick={onBackToBrands}
-            className="flex items-center gap-2 text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
+            className="flex items-center gap-2 text-[#F3F0DF]/50 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
           >
             <ArrowLeft size={14} />
             Todos los Colectivos
@@ -248,11 +246,8 @@ function ProductDetail({
             {brand.name}
           </button>
         </div>
-      </div>
 
-      <div className="px-6 md:px-16 lg:px-24">
-      <div className="max-w-4xl mx-auto mt-10">
-
+        {/* Product header */}
         <div
           className="w-1.5 h-10 mb-8"
           style={{ backgroundColor: brand.accentColor }}
@@ -270,27 +265,23 @@ function ProductDetail({
           </p>
         )}
 
-        {/* Full verbatim tasting notes — enhanced presentation */}
+        {/* Tasting notes */}
         <div className="border-t border-[#F3F0DF]/10 space-y-px bg-[#0A0A0A]">
           {sensorNotes.map(({ label, icon: Icon, content }, idx) => (
             <div
               key={label}
               className="border-b border-[#F3F0DF]/10 py-12 md:py-16 px-8 md:px-12 flex flex-col md:flex-row gap-8 md:gap-16 group hover:bg-[#2C2C2C]/30 transition-colors duration-300"
             >
-              {/* Label + Icon */}
               <div className="flex items-start gap-4 md:w-36 shrink-0">
                 <Icon size={18} className="text-[#FACC15] shrink-0 mt-1" />
                 <span className="text-xs tracking-[0.3em] uppercase text-[#F3F0DF]/50 font-semibold font-sans group-hover:text-[#FACC15] transition-colors">
                   {label}
                 </span>
               </div>
-              
-              {/* Content */}
               <div className="flex-1">
-                <p className="font-serif text-xl md:text-2xl lg:text-2xl leading-relaxed text-[#F3F0DF]/85 group-hover:text-[#F3F0DF] transition-colors duration-300 text-balance">
+                <p className="font-serif text-xl md:text-2xl leading-relaxed text-[#F3F0DF]/85 group-hover:text-[#F3F0DF] transition-colors duration-300 text-balance">
                   {content}
                 </p>
-                {/* Index dot */}
                 <div className="mt-6 flex gap-1.5">
                   {sensorNotes.map((_, i) => (
                     <div
@@ -306,7 +297,7 @@ function ProductDetail({
           ))}
         </div>
 
-        {/* CTA — no price shown */}
+        {/* CTA */}
         <div className="mt-16">
           <button
             onClick={onGoToTienda}
@@ -316,7 +307,7 @@ function ProductDetail({
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
           </button>
         </div>
-      </div>
+
       </div>
     </main>
   )
