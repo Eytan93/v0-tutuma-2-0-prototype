@@ -103,14 +103,20 @@ function BrandView({
 }) {
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
-      <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto mb-20">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-2 text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase mb-12 font-semibold"
-        >
-          <ArrowLeft size={12} />
-          Colectivos
-        </button>
+      {/* Sticky back bar */}
+      <div className="sticky top-16 z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
+        <div className="max-w-7xl mx-auto py-3">
+          <button
+            onClick={onBack}
+            className="flex items-center gap-2 text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
+          >
+            <ArrowLeft size={14} />
+            Todos los Colectivos
+          </button>
+        </div>
+      </div>
+
+      <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto mb-20 mt-10">
         <div
           className="w-1.5 h-12 mb-8"
           style={{ backgroundColor: brand.accentColor }}
@@ -223,25 +229,29 @@ function ProductDetail({
   ].filter((n) => n.content)
 
   return (
-    <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
-      <div className="max-w-4xl mx-auto">
-        {/* Breadcrumb navigation */}
-        <div className="flex items-center gap-3 mb-12">
+    <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
+      {/* Sticky breadcrumb bar */}
+      <div className="sticky top-16 z-40 bg-[#1A1A1A]/95 backdrop-blur-sm border-b border-[#2C2C2C] px-6 md:px-16 lg:px-24">
+        <div className="max-w-4xl mx-auto py-3 flex items-center gap-3">
           <button
             onClick={onBackToBrands}
-            className="flex items-center gap-2 text-[#F3F0DF]/30 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase"
+            className="flex items-center gap-2 text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
           >
-            <ArrowLeft size={12} />
-            Colectivos
+            <ArrowLeft size={14} />
+            Todos los Colectivos
           </button>
           <span className="text-[#F3F0DF]/20 text-xs">/</span>
           <button
             onClick={onBack}
-            className="text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase"
+            className="text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
           >
             {brand.name}
           </button>
         </div>
+      </div>
+
+      <div className="px-6 md:px-16 lg:px-24">
+      <div className="max-w-4xl mx-auto mt-10">
 
         <div
           className="w-1.5 h-10 mb-8"
@@ -306,6 +316,7 @@ function ProductDetail({
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
           </button>
         </div>
+      </div>
       </div>
     </main>
   )
