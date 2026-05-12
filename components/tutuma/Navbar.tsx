@@ -13,7 +13,7 @@ interface NavbarProps {
 
 const navItems: { label: string; view: View }[] = [
   { label: 'El Sistema', view: 'sistema' },
-  { label: 'Productos', view: 'productos' },
+  { label: 'Colectivos', view: 'productos' },
   { label: 'Experiencias', view: 'experiencias' },
   { label: 'Tienda', view: 'tienda' },
   { label: 'Regalos', view: 'regalos' },

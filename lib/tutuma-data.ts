@@ -30,88 +30,92 @@ export const brands: Brand[] = [
     region: 'Sola de Vega',
     state: 'Oaxaca',
     description:
-      'Destilados de la Sierra Sur oaxaqueña, donde el terruño solteco imprime su carácter único en cada expresión.',
+      'Rajabule, nace del orgullo de producir mezcales de alta calidad con técnicas 100% artesanales, logrando sabores refinados y sutiles con carácter único, resaltando todo el origen y la riqueza de la tradición mezcalera del terruño Solteco famosa cuna del mezcal Oaxaqueño.',
     accentColor: '#6B7F5E',
     products: [
       {
-        id: 'rajabule-arroqueno',
-        name: 'Rajabule Arroqueño',
-        agave: 'Arroqueño',
+        id: 'rajabule-arroqueno-2019',
+        name: 'Arroqueño 2019',
+        agave: 'Arroqueño (Agave americana)',
+        subtitle: 'Cosecha 2019',
         price: 1450,
         notes: {
-          vista:
-            'Cristalino, brillante, con un perlado (rosario) de persistencia media que indica su graduación alcohólica equilibrada.',
+          vista: 'Cristalino de grueso aperlado.',
           nariz:
-            'Aromas intensos a agave cocido, notas profundas de tierra húmeda y un toque sutil de hierba recién cortada.',
+            'Un complejo aroma, con notas de cacahuate que armonizan con flores, naranja y frutos dulces. Al final resalta un ligero ahumado, con notas de madera, tierra húmeda y el dulce maguey cocido.',
           boca:
-            'Entrada elegante y untuosa. Predominan sabores dulces que recuerdan al caramelo de agave, seguidos de un final ligeramente amargo y mineral muy sofisticado.',
+            'El maguey cocido y las flores, inundan el paladar con un tenue amargor y suaves notas de humo. En el retrogusto se confirma la complejidad de las notas percibidas en nariz, la frescura de la naranja, el mango y las hierbas del campo, armoniza con los frutos secos, la madera y mantequilla.',
         },
       },
       {
-        id: 'rajabule-tobala',
-        name: 'Rajabule Tobalá',
-        agave: 'Tobalá',
+        id: 'rajabule-tobala-2022',
+        name: 'Tobalá 2022',
+        agave: 'Tobalá (Agave potatorum)',
+        subtitle: 'Cosecha 2022',
         price: 1680,
         notes: {
-          vista: 'Cuerpo ligero a medio, transparente con matices plateados.',
+          vista: 'Cristalino, limpio y brillante.',
           nariz:
-            'Perfil marcadamente floral (flores blancas) y frutal. Se perciben destellos de manzana verde y un ahumado muy tenue que no opaca el aroma del agave.',
+            'Resalta el dulce maguey cocido en primera impresión, con un tenue olor a barro y petricor. Seguido de una fresca sensación cítrica y floral, invadiendo en nariz flores del campo, azahares y jazmín. Resaltan las notas finales de frutos secos, pasas y vainilla.',
           boca:
-            'Dulzor equilibrado con una textura sedosa. Es delicado al paladar con una persistencia larga y un retrogusto que evoca la frescura del campo.',
+            'Suave y untuoso al pasar por la boca, resalta con potencia los sabores herbales a té limón y poleo, que invaden al paladar con el paso de los minutos, reafirmando en el retrogusto el dulce maguey cocido.',
         },
       },
       {
-        id: 'rajabule-mexicano',
-        name: 'Rajabule Mexicano',
-        agave: 'Mexicano',
+        id: 'rajabule-mexicano-2022',
+        name: 'Mexicano 2022',
+        agave: 'Mexicano (Agave rhodacantha)',
+        subtitle: 'Cosecha 2022',
         price: 1550,
         notes: {
           vista:
-            'Limpio y de gran cuerpo; al agitar la copa, las "piernas" o lágrimas bajan lentamente.',
+            'Cristalino como buen mezcal joven, con ligeras matices verdes provenientes del agave, de grueso aperlado.',
           nariz:
-            'Explosión de notas especiadas (pimienta, clavo) y un carácter vegetal robusto.',
+            'Aromas frutales a plátano, piña y manzana roja, con frescas notas de anís, hierbas del campo, flores y tierra mojada. Al final destellos ahumados de nuez, madera y maguey cocido.',
           boca:
-            'Ataque potente pero armónico. Sabores terrosos y minerales que llenan el paladar, con un final seco y ligeramente picante que invita a otro trago.',
+            'Poderoso con un ligero toque amargo, de gran permanencia en boca, confirma los sabores frutales, armonizando con una fresca sensación de hierba seca, barro y un firme retrogusto a maguey cocido.',
         },
       },
       {
         id: 'rajabule-espadin-2016',
-        name: 'Rajabule Espadín (2016)',
-        agave: 'Espadín',
+        name: 'Espadín 2016',
+        agave: 'Espadín (Agave angustifolia)',
         subtitle: 'Cosecha 2016',
         price: 980,
         notes: {
-          vista: 'Transparencia total con destellos luminosos.',
+          vista: 'Cristalino, con ligeras matices amarillas.',
           nariz:
-            'Notas cítricas (cáscara de naranja) mezcladas con el aroma dulce del horno de piedra y un ahumado de leña de encino muy bien integrado.',
+            'Frescos aromas a hierba húmeda y frutas verdes, con notas cítricas y destellos finales de barro y tierra seca.',
           boca:
-            'Suave y balanceado. El tiempo de reposo en vidrio ha redondeado los sabores, eliminando la agresividad del alcohol y resaltando notas frutales y de agave maduro.',
+            'Poderoso con un ligero toque amargo, de gran permanencia en boca, confirma los sabores frutales, armonizando con una fresca sensación de hierba seca, barro y un firme retrogusto a maguey cocido.',
         },
       },
       {
-        id: 'rajabule-ensamble-em',
-        name: 'Rajabule Ensamble (Espadín | Mexicano)',
+        id: 'rajabule-ensamble-em-2016',
+        name: 'Espadín | Mexicano 2016',
         agave: 'Espadín · Mexicano',
+        subtitle: 'Ensamble 2016',
         price: 1150,
         notes: {
-          vista: 'Cristalino con buena densidad.',
+          vista: 'Cristalino, con ligeros matices amarillos.',
           nariz:
-            'Un equilibrio entre lo frutal del Espadín y lo herbáceo del Mexicano. Aparecen notas de frutos secos y semillas tostadas.',
+            'Firmes destellos florales de azahar, seguidos de frutos dulces, plátano y un matiz amaderado de leña húmeda y copal.',
           boca:
-            'Gran estructura. La dulzura inicial se transforma en un final complejo, especiado y con una mineralidad característica del agua de pozo utilizada en su destilación.',
+            'Muestra carácter, pero fresco y de paso suave. Se reafirman en paladar el plátano y los matices de leña húmeda y copal. Cierra armoniosamente con un retrogusto de lima y naranja, con un destello final de hierbas y flores.',
         },
       },
       {
-        id: 'rajabule-ensamble-etm',
-        name: 'Rajabule Ensamble (Espadín | Tobasiche | Mexicano)',
+        id: 'rajabule-ensamble-etm-2016',
+        name: 'Espadín | Tobasiche | Mexicano 2016',
         agave: 'Espadín · Tobasiche · Mexicano',
+        subtitle: 'Ensamble 2016',
         price: 1380,
         notes: {
-          vista: 'Brillante, con un perlado fino y constante.',
+          vista: 'Cristalino, con ligeras matices amarillas.',
           nariz:
-            'Muy compleja debido al Tobasiche. Notas de madera húmeda, resina y un trasfondo herbal silvestre.',
+            'Un complejo y potente aromático, con primeros destellos de jazmín y naranja. Las notas especiadas de clavo, pimienta y vainilla, armonizan con la frescura de las hierbas del campo y un tenue petricor. El maguey cocido y ligeras notas de humo inundan un breve final.',
           boca:
-            'Una experiencia robusta. Se perciben capas de sabor que van desde lo dulce hasta lo amaderado, con una textura persistente que deja un recuerdo de humo y tierra.',
+            'De fuerte carácter, reafirma en el retrogusto su complejidad aromática. Los sabores afrutados, la naranja y manzana inundan el paladar. La mezcla de chocolate y clavo, hacen una explosión de sabor al chocar con la frescura del té limón y las hierbas del campo. El maguey cocido y el tenue ahumado, se perciben al final, con gran persistencia.',
         },
       },
     ],
@@ -122,124 +126,192 @@ export const brands: Brand[] = [
     region: 'Miahuatlán',
     state: 'Oaxaca',
     description:
-      'Expresiones silvestres de la sierra de Miahuatlán, con agaves de maduración excepcional y maestros de generaciones.',
+      'José Lucas es el heredero de una tradición mezcalera que abarca nueve generaciones. Ubicado en San Isidro Guishe, San Luis Amatlán, el palenque familiar destila magueyes endémicos de la región, reconocida como una cuna del mezcal en Oaxaca.',
     accentColor: '#8B6E4E',
     products: [
       {
-        id: '400l-espadin',
-        name: '400 Lustros Espadín',
-        agave: 'Espadín',
-        price: 980,
-        notes: {
-          vista:
-            'Cristalino, brillante, con un perlado (rosario) que se forma rápidamente al agitar la botella.',
-          nariz:
-            'Predominan las notas de agave cocido y mieles dulces. Se percibe un ahumado ligero y equilibrado con destellos de cítricos y hierbas silvestres.',
-          boca:
-            'Es suave y sedoso en el paladar. Presenta un equilibrio entre la dulzura del agave maduro y un final ligeramente ahumado y terroso.',
-        },
-      },
-      {
-        id: '400l-tobala',
-        name: '400 Lustros Tobalá',
-        agave: 'Tobalá',
-        price: 1780,
-        notes: {
-          vista:
-            'Limpio y transparente, con una densidad media que se refleja en sus piernas persistentes en la copa.',
-          nariz:
-            'Perfil aromático muy complejo y delicado. Sobresalen las notas florales (rosas y flores de campo) acompañadas de un aroma a fruta tropical madura.',
-          boca:
-            'Entrada dulce y frutal. Su cuerpo es robusto pero amable, con un retrogusto largo que deja sensaciones de mantequilla y un toque mineral sutil.',
-        },
-      },
-      {
-        id: '400l-ensamble-et',
-        name: '400 Lustros Ensamble (Espadín | Tobalá)',
-        agave: 'Espadín · Tobalá',
-        price: 1580,
-        notes: {
-          vista: 'Gran brillantez y transparencia, con destellos plateados.',
-          nariz:
-            'Una mezcla armoniosa que combina el carácter cítrico del Espadín con la elegancia floral del Tobalá. Se detectan notas de frutos secos y un fondo de pino.',
-          boca:
-            'Ofrece una explosión de sabores; primero el dulzor frutal seguido de una estructura más firme y herbácea. El final es persistente, equilibrando perfectamente el humo con la frescura del agave.',
-        },
-      },
-      {
         id: '400l-tepeztate',
-        name: '400 Lustros Tepeztate',
-        agave: 'Tepeztate',
+        name: 'Tepeztate',
+        agave: 'Tepeztate (Agave marmorata)',
         price: 1950,
         notes: {
-          vista: 'Cristalino con matices luminosos.',
+          vista: 'Cristalino de fino aperlado.',
           nariz:
-            'Aroma intensamente herbal y vegetal (pimiento verde, hierbabuena). Es el más "salvaje" de la línea en nariz, con notas marcadas de tierra húmeda.',
+            'Complejo y potente, con cuerpo, pero suave y untuoso. Presenta aromas herbales y terrosos, complementados con el dulzor del maguey cocido. Notas de cáscaras de limón y flor de azahar se mezclan delicadamente con matices de frambuesa.',
           boca:
-            'En boca es potente y con carácter. Sus sabores son marcadamente especiados y minerales, con un final seco y persistente que recuerda a las raíces y plantas silvestres.',
+            'Se confirman las notas de maguey cocido y tierra, acompañadas por sabores a raíces de árbol y frutos rojos. Destacan también la frambuesa y toques cítricos, junto con un sutil sabor a plátano y frutos secos como el cacahuate.',
+        },
+      },
+      {
+        id: '400l-cucharillo',
+        name: 'Cucharillo',
+        agave: 'Cucharillo (Dasylirion serratifolium)',
+        price: 1780,
+        notes: {
+          vista: 'Cristalino de grueso aperlado.',
+          nariz:
+            'Se perciben aromas frutales, destacando frutos tropicales y plátano maduro, acompañados de notas de frutos secos. También se aprecian aromas terrosos, como tierra seca, junto con un sutil toque de especias y semillas.',
+          boca:
+            'Potente y complejo, con una textura en boca que denota cuerpo y armonía. En boca se confirman los aromas terrosos, como la tierra seca y la raíz de árbol. Resaltan también sabores a frutos cítricos y a manzana verde, acompañados de matices de especias, hierba seca y delicadas notas florales.',
+        },
+      },
+      {
+        id: '400l-madrecuishe',
+        name: 'Madrecuishe',
+        agave: 'Madrecuishe (Agave karwinskii)',
+        price: 1680,
+        notes: {
+          vista: 'Cristalino de fino aperlado.',
+          nariz:
+            'Potente y complejo, con una textura untuosa y armoniosa. Se aprecian aromas a tierra seca y petricor, que se mezclan con frescas notas herbales, maguey cocido y un toque de caramelo. También emergen matices de frutos tropicales y hierba del campo.',
+          boca:
+            'Los sabores confirman los aromas, destacando la tierra seca y el petricor. Se perciben sabores frutales a manzana y membrillo, acompañados de delicadas notas florales que completan esta experiencia sensorial.',
+        },
+      },
+      {
+        id: '400l-mexicano-sierrudo',
+        name: 'Mexicano Sierrudo',
+        agave: 'Mexicano Sierrudo (Agave americana)',
+        price: 1850,
+        notes: {
+          vista: 'Cristalino con un perlado grueso.',
+          nariz:
+            'Un complejo aroma donde resalta primero las notas frutales de grosella y manzana. Se entrelazan con aromas terrosos de tierra seca y raíces de árbol, acompañados de ligeros matices florales. Se perciben también sutiles notas de pencas de maguey y cacahuate.',
+          boca:
+            'Los sabores frutales se confirman en boca, junto con el dulzor del maguey cocido y caramelo. Un toque herbal a té de limón y menta complementa el perfil, seguido por un ligero sabor a tierra seca, creando una experiencia armoniosa y con cuerpo.',
+        },
+      },
+      {
+        id: '400l-ensamble-3-agaves',
+        name: 'Ensamble de Tres Agaves',
+        agave: 'Espadín · Tobalá · Mexicano',
+        price: 1580,
+        notes: {
+          vista: '',
+          nariz: '',
+          boca: '',
         },
       },
     ],
   },
   {
-    id: 'migusto',
+    id: 'migustoes',
     name: 'Mi Gusto Es',
-    region: 'Matatlán',
+    region: 'Santiago Matatlán',
     state: 'Oaxaca',
     description:
-      'Desde el corazón de Matatlán, capital mundial del mezcal, una colección que celebra la tradición y la innovación.',
-    accentColor: '#C27B3E',
+      'Mi Gusto Es es un proyecto familiar fundado en 1984 por Martín García Sernas y Simona López Hernández en Santiago Matatlán, Oaxaca, con el propósito de mantener vivo el legado ancestral del mezcal. Los magueyes se cultivan en pequeñas parcelas agroforestales junto al maíz, siguiendo la tradición de los "Metepantles".',
+    accentColor: '#A0522D',
     products: [
       {
         id: 'mg-espadin',
-        name: 'Mi Gusto Es Espadín',
-        agave: 'Espadín',
+        name: 'Espadín',
+        agave: 'Espadín (Agave angustifolia)',
         price: 850,
         notes: {
-          vista: 'Cristalino y brillante, con una densidad ligera a media y un perlado limpio.',
-          nariz:
-            'Aromas dulces predominantes de agave cocido y melaza. Se perciben notas frutales de plátano y manzana, con un ahumado muy tenue que recuerda al carbón vegetal.',
+          vista: 'Cristalino con ligeros matices amarillos.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
           boca:
-            'Entrada suave y fresca. En el paladar es predominantemente dulce y cítrico, con una textura fluida que facilita la apreciación de sus notas de hierba fresca. El final es corto y limpio.',
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-espadin-con-gusano',
+        name: 'Espadín con Gusano',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 950,
+        notes: {
+          vista: 'Cristalino con ligeros matices amarillos.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-espadin-capon',
+        name: 'Espadín Capón',
+        agave: 'Espadín Capón (Agave angustifolia)',
+        price: 1100,
+        notes: {
+          vista: 'Cristalino con ligeros matices amarillos.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-espadin-reposado',
+        name: 'Espadín Reposado',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 1200,
+        notes: {
+          vista: '',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-espadin-anejo',
+        name: 'Espadín Añejo',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 1400,
+        notes: {
+          vista:
+            'Limpio y brillante, con un atractivo tono ámbar profundo, reflejo del añejamiento en barricas de roble blanco americano.',
+          nariz: 'Ligeros aromas a tierra, humo, fruta madura y caramelo.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
         },
       },
       {
         id: 'mg-tobala',
-        name: 'Mi Gusto Es Tobalá',
-        agave: 'Tobalá',
+        name: 'Tobalá',
+        agave: 'Tobalá (Agave potatorum)',
         price: 1650,
         notes: {
-          vista: 'Cuerpo medio, transparente con destellos plateados muy vivos.',
-          nariz:
-            'Perfil marcadamente floral y silvestre. Notas de flores de azahar y un toque sutil de resina de pino y tierra seca.',
+          vista: 'Claro y cristalino, perla mediana de duración corta.',
+          nariz: 'Fuerte presencia fresca, notas de manzana con leve esencias herbal.',
           boca:
-            'Ataque untuoso. Se confirman las notas frutales y un dulzor que recuerda al piloncillo. Es un mezcal complejo pero muy balanceado, con un final persistente que deja un recuerdo de frutos secos.',
+            'Se aprecia notas ligeras de frutas dulces y flores rojas con final láctico.',
         },
       },
       {
         id: 'mg-tepeztate',
-        name: 'Mi Gusto Es Tepeztate',
-        agave: 'Tepeztate',
+        name: 'Tepeztate',
+        agave: 'Tepeztate (Agave marmorata)',
         price: 1850,
         notes: {
-          vista: 'Limpio y brillante, con piernas (lágrimas) que descienden con lentitud en la copa.',
-          nariz:
-            'Aroma herbal intenso. Sobresalen las notas de pimiento verde, hierbas de campo y un carácter mineral muy marcado (piedra húmeda).',
-          boca:
-            'Potente y estructurado. Especiado en el paladar con sabores que evocan la raíz del agave y un final seco, persistente y ligeramente picante.',
+          vista: 'Claro y cristalino, perla mediana de duración corta.',
+          nariz: 'Aroma terroso húmedo con sutil frescura.',
+          boca: 'Sabor intenso a frutos secos como pera y mango, con recaída a sabor herbal.',
         },
       },
       {
-        id: 'mg-ensamble-et',
-        name: 'Mi Gusto Es Ensamble (Espadín | Tobalá)',
-        agave: 'Espadín · Tobalá',
-        price: 1450,
+        id: 'mg-espadin-pan-de-muerto',
+        name: 'Espadín Pan de Muerto',
+        agave: 'Espadín (Agave angustifolia)',
+        subtitle: 'Edición Especial',
+        price: 1100,
         notes: {
-          vista: 'Cristalino con gran luminosidad.',
+          vista: 'Cristalino y brillante, con ligeros matices dorados.',
           nariz:
-            'Un equilibrio aromático entre lo frutal y lo floral. Se perciben capas de aroma que van desde el agave dulce hasta un fondo de hierbabuena.',
+            'Aromas dulces y especiados que recuerdan al pan de muerto: anís, cáscara de naranja y agave cocido, con un sutil fondo ahumado.',
           boca:
-            'Ofrece una experiencia redonda; combina la suavidad de la entrada del Espadín con la complejidad y el cuerpo del Tobalá. El retrogusto es elegante, mezclando notas de humo suave con un final dulce y mineral.',
+            'Suave y equilibrado, con notas de pan dulce, especias y un ahumado ligero que redondea el perfil.',
+        },
+      },
+      {
+        id: 'mg-espadin-cempasuchil',
+        name: 'Espadín Cempasúchil',
+        agave: 'Espadín (Agave angustifolia)',
+        subtitle: 'Edición Especial',
+        price: 1100,
+        notes: {
+          vista: 'Cristalino y brillante, con reflejos plateados.',
+          nariz: 'Elegante y floral, con notas de agave cocido, cempasúchil, miel y un toque cítrico.',
+          boca:
+            'Sedoso y herbal, con sabores florales, cáscara de naranja y un amargor fino que equilibra el dulzor.',
         },
       },
     ],
@@ -250,72 +322,73 @@ export const brands: Brand[] = [
     region: 'Sierra Juárez',
     state: 'Oaxaca',
     description:
-      'Whiskey de maíz oaxaqueño elaborado con variedades nativas de la Sierra Juárez. Cada color, un carácter distinto.',
+      'Whiskey Sierra Norte nace para preservar las variedades ancestrales de maíz oaxaqueño y la cultura agrícola que las sostiene. Elaborado con 85% maíz nativo libre de transgénicos y 15% cebada malteada, es un whiskey artesanal que celebra la biodiversidad, el trabajo campesino y más de 7,000 años de historia agrícola en México.',
     accentColor: '#D4A017',
     products: [
       {
         id: 'sn-maiz-blanco',
-        name: 'Sierra Norte Maíz Blanco',
+        name: 'Single Barrel Maíz Blanco',
         agave: 'Maíz Blanco Nativo',
         price: 1200,
         notes: {
-          vista: 'Color oro pálido, muy limpio y brillante.',
-          nariz:
-            'Aromas sutiles y frescos. Predomina el maíz tostado, notas de vainilla suave y un ligero toque de manzana verde y pera.',
-          boca:
-            'Es el más ligero de la familia. Entrada suave con sabores de mantequilla, almendras y un final limpio con un toque de pimienta blanca.',
+          vista: '',
+          nariz: '',
+          boca: 'La dulzura luminosa del Blanco. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
         id: 'sn-maiz-amarillo',
-        name: 'Sierra Norte Maíz Amarillo',
+        name: 'Single Barrel Maíz Amarillo',
         agave: 'Maíz Amarillo Nativo',
         price: 1200,
         notes: {
-          vista: 'Tono ámbar claro con reflejos dorados.',
-          nariz:
-            'Perfil más robusto que el blanco. Notas marcadas de palomitas de maíz, caramelo, miel y un fondo de madera de roble tostada.',
-          boca:
-            'Cuerpo medio y untuoso. Sabores de cereales dulces, pan horneado y un toque de canela. El final es seco y persistente, con una nota de frutos secos.',
-        },
-      },
-      {
-        id: 'sn-maiz-negro',
-        name: 'Sierra Norte Maíz Negro',
-        agave: 'Maíz Negro Nativo',
-        price: 1350,
-        notes: {
-          vista: 'Color ámbar profundo, cobrizo.',
-          nariz:
-            'Aroma complejo y profundo. Notas intensas de frutos rojos secos (pasas, ciruela pasa), chocolate oscuro y cuero.',
-          boca:
-            'Estructura firme. En paladar destacan las notas de cacao, cerezas negras y un ahumado muy sutil proveniente de la barrica. Es un whisky con mucha personalidad y un final largo y especiado.',
+          vista: '',
+          nariz: '',
+          boca: 'La suavidad dorada del Amarillo. Seleccionado dentro del Top 20 de los mejores whiskies del mundo por Whisky Advocate. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
         id: 'sn-maiz-rojo',
-        name: 'Sierra Norte Maíz Rojo',
+        name: 'Single Barrel Maíz Rojo',
         agave: 'Maíz Rojo Nativo',
         price: 1350,
         notes: {
-          vista: 'Color ámbar con matices rojizos y brillantes.',
-          nariz:
-            'Perfil marcadamente dulce y especiado. Notas de marzapán, nuez moscada y un aroma floral inusual que recuerda al hibisco (flor de jamaica).',
-          boca:
-            'Entrada cálida. Predominan sabores de mermelada de frutas, regaliz y madera dulce. Tiene un equilibrio excelente entre el dulzor del maíz rojo y la astringencia de la barrica.',
+          vista: '',
+          nariz: '',
+          boca: 'La estructura especiada del Rojo. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
         id: 'sn-maiz-morado',
-        name: 'Sierra Norte Maíz Morado',
+        name: 'Single Barrel Maíz Morado',
         agave: 'Maíz Morado Nativo',
         price: 1350,
         notes: {
-          vista: 'Dorado intenso con reflejos caoba.',
-          nariz:
-            'Notas dulces de frutas tropicales deshidratadas, vainilla intensa y un toque de caramelo quemado.',
-          boca:
-            'Textura sedosa. Sabores que evocan al maíz dulce, con notas de melaza y un final que recuerda a la cáscara de cítricos confitada.',
+          vista: '',
+          nariz: '',
+          boca: 'La riqueza frutal del Morado. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
+        },
+      },
+      {
+        id: 'sn-maiz-negro',
+        name: 'Single Barrel Maíz Negro',
+        agave: 'Maíz Negro Nativo',
+        price: 1350,
+        notes: {
+          vista: '',
+          nariz: '',
+          boca: 'La elegancia tostada del Negro. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
+        },
+      },
+      {
+        id: 'sn-maiz-arcoiris',
+        name: 'Single Barrel Maíz Arcoiris',
+        agave: 'Maíz Arcoiris Nativo',
+        price: 1450,
+        notes: {
+          vista: '',
+          nariz: '',
+          boca: 'La vitalidad del Arcoíris. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
     ],
