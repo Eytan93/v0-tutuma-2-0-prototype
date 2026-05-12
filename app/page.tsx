@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navbar from '@/components/tutuma/Navbar'
 import ViewSistema from '@/components/tutuma/ViewSistema'
 import ViewProductos from '@/components/tutuma/ViewProductos'
@@ -13,9 +13,12 @@ type View = 'sistema' | 'productos' | 'experiencias' | 'tienda' | 'regalos'
 export default function TutumaApp() {
   const [currentView, setCurrentView] = useState<View>('sistema')
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [currentView])
+
   const handleNavigate = (view: View) => {
     setCurrentView(view)
-    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
