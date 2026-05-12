@@ -26,7 +26,9 @@ export default function TutumaApp() {
           onNavigate={(v) => handleNavigate(v as View)}
         />
       )}
-      {currentView === 'productos' && <ViewProductos />}
+      {currentView === 'productos' && (
+        <ViewProductos onNavigate={(v) => handleNavigate(v as View)} />
+      )}
       {currentView === 'experiencias' && <ViewExperiencias />}
       {currentView === 'tienda' && <ViewTienda />}
       {currentView === 'regalos' && <ViewRegalos />}
