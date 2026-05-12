@@ -99,58 +99,83 @@ function BrandView({
 }) {
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24">
-      <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto mb-16">
+      <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto mb-20">
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase mb-10"
+          className="flex items-center gap-2 text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase mb-12 font-semibold"
         >
           <ArrowLeft size={12} />
           Todas las marcas
         </button>
         <div
-          className="w-1 h-10 mb-6"
+          className="w-1.5 h-12 mb-8"
           style={{ backgroundColor: brand.accentColor }}
         />
         <p
-          className="text-xs tracking-[0.4em] uppercase mb-3 font-sans"
+          className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans"
           style={{ color: brand.accentColor }}
         >
           {brand.region} · {brand.state}
         </p>
-        <h1 className="font-serif text-5xl md:text-7xl mb-4">{brand.name}</h1>
-        <p className="font-sans text-[#F3F0DF]/50 text-sm leading-relaxed max-w-lg">
+        <h1 className="font-serif text-6xl md:text-7xl mb-6 font-bold">{brand.name}</h1>
+        <p className="font-sans text-lg md:text-xl text-[#F3F0DF]/60 leading-relaxed max-w-2xl">
           {brand.description}
         </p>
       </div>
 
       <div className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto">
-        <div className="space-y-px">
+        <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/40 mb-8 font-semibold font-sans">
+          {brand.products.length} Expresiones
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#2C2C2C]">
           {brand.products.map((product) => (
             <button
               key={product.id}
               onClick={() => onSelectProduct(product)}
-              className="group w-full bg-[#2C2C2C] hover:bg-[#F3F0DF] p-8 md:p-10 text-left transition-colors duration-300 flex flex-col md:flex-row md:items-start md:justify-between gap-6"
+              className="group bg-[#1A1A1A] hover:bg-[#2C2C2C] p-10 md:p-12 text-left transition-all duration-300 flex flex-col gap-6 border-l-2"
+              style={{ borderColor: brand.accentColor + '40' }}
             >
               <div className="flex-1">
-                <h3 className="font-serif text-2xl md:text-3xl text-[#F3F0DF] group-hover:text-[#1A1A1A] transition-colors duration-300 mb-1">
+                <h3 className="font-serif text-2xl md:text-3xl text-[#F3F0DF] group-hover:text-[#FACC15] transition-colors duration-300 mb-2 font-bold">
                   {product.name}
                 </h3>
                 {product.agave && (
-                  <p className="text-xs tracking-[0.2em] text-[#F3F0DF]/30 group-hover:text-[#1A1A1A]/40 font-sans mb-4 transition-colors">
+                  <p className="text-xs tracking-[0.2em] text-[#F3F0DF]/40 group-hover:text-[#F3F0DF]/60 font-sans mb-6 transition-colors font-semibold">
                     {product.agave}
                   </p>
                 )}
-                <div className="flex gap-2 flex-wrap">
-                  <span className="text-[11px] tracking-[0.15em] uppercase text-[#F3F0DF]/20 group-hover:text-[#1A1A1A]/30 font-sans transition-colors">
-                    Vista · Nariz · Boca
-                  </span>
+                
+                {/* Preview de las notas */}
+                <div className="space-y-4 mb-8">
+                  <div>
+                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
+                      Vista
+                    </p>
+                    <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
+                      {product.notes.vista}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
+                      Nariz
+                    </p>
+                    <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
+                      {product.notes.nariz}
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-3 text-[#FACC15] group-hover:text-[#6B7F5E] transition-colors shrink-0">
-                <span className="text-xs tracking-[0.2em] uppercase font-sans">
-                  Ver perfil completo
-                </span>
-                <ArrowRight size={12} />
+              
+              <div className="flex items-center justify-between pt-6 border-t border-[#F3F0DF]/10">
+                <div className="text-[11px] tracking-[0.15em] uppercase text-[#F3F0DF]/30 group-hover:text-[#F3F0DF]/50 transition-colors font-sans font-semibold">
+                  Vista · Nariz · Boca
+                </div>
+                <div className="flex items-center gap-2 text-[#FACC15] group-hover:text-[#F3F0DF] transition-colors">
+                  <span className="text-xs tracking-[0.2em] uppercase font-sans font-semibold">
+                    Ver completo
+                  </span>
+                  <ArrowRight size={12} />
+                </div>
               </div>
             </button>
           ))}
@@ -179,7 +204,7 @@ function ProductDetail({
 
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <button
           onClick={onBack}
           className="flex items-center gap-2 text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase mb-12"
@@ -189,50 +214,66 @@ function ProductDetail({
         </button>
 
         <div
-          className="w-1 h-8 mb-6"
+          className="w-1.5 h-10 mb-8"
           style={{ backgroundColor: brand.accentColor }}
         />
         <p
-          className="text-xs tracking-[0.4em] uppercase mb-4 font-sans"
+          className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans"
           style={{ color: brand.accentColor }}
         >
           {brand.name} · {brand.region}, {brand.state}
         </p>
-        <h1 className="font-serif text-4xl md:text-5xl mb-2">{product.name}</h1>
+        <h1 className="font-serif text-5xl md:text-7xl mb-4 font-bold">{product.name}</h1>
         {product.agave && (
-          <p className="font-sans text-xs tracking-[0.25em] uppercase text-[#F3F0DF]/30 mb-12">
+          <p className="font-sans text-sm tracking-[0.25em] uppercase text-[#F3F0DF]/40 mb-16 font-semibold">
             {product.agave}
           </p>
         )}
 
-        {/* Full verbatim tasting notes */}
-        <div className="border-t border-[#F3F0DF]/10">
-          {sensorNotes.map(({ label, icon: Icon, content }) => (
+        {/* Full verbatim tasting notes — enhanced presentation */}
+        <div className="border-t border-[#F3F0DF]/10 space-y-px bg-[#0A0A0A]">
+          {sensorNotes.map(({ label, icon: Icon, content }, idx) => (
             <div
               key={label}
-              className="border-b border-[#F3F0DF]/10 py-10 flex flex-col md:flex-row gap-4 md:gap-12"
+              className="border-b border-[#F3F0DF]/10 py-12 md:py-16 px-8 md:px-12 flex flex-col md:flex-row gap-8 md:gap-16 group hover:bg-[#2C2C2C]/30 transition-colors duration-300"
             >
-              <div className="flex items-center gap-3 md:w-28 shrink-0">
-                <Icon size={13} className="text-[#6B7F5E] shrink-0" />
-                <span className="text-xs tracking-[0.3em] uppercase text-[#F3F0DF]/40 font-sans">
+              {/* Label + Icon */}
+              <div className="flex items-start gap-4 md:w-36 shrink-0">
+                <Icon size={18} className="text-[#FACC15] shrink-0 mt-1" />
+                <span className="text-xs tracking-[0.3em] uppercase text-[#F3F0DF]/50 font-semibold font-sans group-hover:text-[#FACC15] transition-colors">
                   {label}
                 </span>
               </div>
-              <p className="font-serif text-lg md:text-xl leading-relaxed text-[#F3F0DF]/80">
-                {content}
-              </p>
+              
+              {/* Content */}
+              <div className="flex-1">
+                <p className="font-serif text-xl md:text-2xl lg:text-2xl leading-relaxed text-[#F3F0DF]/85 group-hover:text-[#F3F0DF] transition-colors duration-300 text-balance">
+                  {content}
+                </p>
+                {/* Index dot */}
+                <div className="mt-6 flex gap-1.5">
+                  {sensorNotes.map((_, i) => (
+                    <div
+                      key={i}
+                      className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                        i === idx ? 'bg-[#FACC15]' : 'bg-[#F3F0DF]/10'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
 
         {/* CTA — no price shown */}
-        <div className="mt-14">
+        <div className="mt-16">
           <button
             onClick={onGoToTienda}
-            className="group w-full md:w-auto flex items-center justify-center md:justify-start gap-3 bg-[#FACC15] text-[#1A1A1A] px-10 py-4 text-xs tracking-[0.2em] uppercase font-semibold hover:bg-[#F3F0DF] transition-colors duration-300 font-sans"
+            className="group w-full md:w-auto flex items-center justify-center md:justify-start gap-3 bg-[#FACC15] text-[#1A1A1A] px-10 py-5 text-xs tracking-[0.2em] uppercase font-bold hover:bg-[#F3F0DF] transition-all duration-300 font-sans"
           >
             Ver Disponibilidad en Tienda
-            <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform duration-200" />
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
           </button>
         </div>
       </div>

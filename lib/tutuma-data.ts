@@ -40,11 +40,11 @@ export const brands: Brand[] = [
         price: 1450,
         notes: {
           vista:
-            'Cristalino, brillante, con un perlado (rosario) de persistencia media que indica su graduación alcohólica equilibrada.',
+            'Cristalino con un perlado largo y envolvente. La luz atraviesa limpiamente, revelando la pureza de una destilación magistral.',
           nariz:
-            'Aromas intensos a agave cocido, notas profundas de tierra húmeda y un toque sutil de hierba recién cortada.',
+            'La tierra solteca en su máxima expresión. Agave profundo y cocido, seguido de minerales vivos (piedra mojada, sílex) y un herbáceo silvestre que susurra historias del Caballito Blanco.',
           boca:
-            'Entrada elegante y untuosa. Predominan sabores dulces que recuerdan al caramelo de agave, seguidos de un final ligeramente amargo y mineral muy sofisticado.',
+            'Untuoso al primer contacto. Dulzor del agave que evoca piloncillo y miel, abriéndose hacia un ahumado elegante. El final es mineral y seco — como lamer roca de río — con una persistencia que permanece.',
         },
       },
       {
@@ -53,11 +53,11 @@ export const brands: Brand[] = [
         agave: 'Tobalá',
         price: 1680,
         notes: {
-          vista: 'Cuerpo ligero a medio, transparente con matices plateados.',
+          vista: 'Corpulencia media en cuerpo pálido. Las "lágrimas" bajan con ritmo mesurado — prueba de su estructura alcohólica controlada.',
           nariz:
-            'Perfil marcadamente floral (flores blancas) y frutal. Se perciben destellos de manzana verde y un ahumado muy tenue que no opaca el aroma del agave.',
+            'Dominio floral: flores blancas de agave en floración, jazmín sutil. Cítricos frescos (lima, pomelo) sin perder el ahumado tenue que le confiere misterio. Un bouquet que invita y desconciert.',
           boca:
-            'Dulzor equilibrado con una textura sedosa. Es delicado al paladar con una persistencia larga y un retrogusto que evoca la frescura del campo.',
+            'Sedoso desde el primer instante. Dulzura balanceada que recuerda a la flor de agave cocida, con una textura oleosa que recubre el paladar. Largo retrogusto mentolado y floral — como sorber rocío de flores silvestres.',
         },
       },
       {
@@ -67,11 +67,11 @@ export const brands: Brand[] = [
         price: 1550,
         notes: {
           vista:
-            'Limpio y de gran cuerpo; al agitar la copa, las "piernas" o lágrimas bajan lentamente.',
+            'Cristalino de cuerpo denso; las "piernas" descienden como savia lenta, indicando peso alcohólico sin agresividad.',
           nariz:
-            'Explosión de notas especiadas (pimienta, clavo) y un carácter vegetal robusto.',
+            'Especias artesanales: pimienta negra, clavo de olor, anís. Fondo vegetal profundo (romero salvaje, pimentón). Un carácter masculino, terrestre, que exige respeto.',
           boca:
-            'Ataque potente pero armónico. Sabores terrosos y minerales que llenan el paladar, con un final seco y ligeramente picante que invita a otro trago.',
+            'Ataque potente pero nunca agresivo. Especiado puro: pimienta que abraza, minerales (grafito, pizarra) y un ahumado persistente. Final seco y ligeramente álgido — como sorber humo de encino en la noche fría.',
         },
       },
       {
@@ -81,11 +81,11 @@ export const brands: Brand[] = [
         subtitle: 'Cosecha 2016',
         price: 980,
         notes: {
-          vista: 'Transparencia total con destellos luminosos.',
+          vista: 'Cristalino refulgente. Destellos de luz confirman su transparencia absoluta y pureza.',
           nariz:
-            'Notas cítricas (cáscara de naranja) mezcladas con el aroma dulce del horno de piedra y un ahumado de leña de encino muy bien integrado.',
+            'Cítricos penetrantes (cáscara de naranja, bergamota) entrelazados con humo de encino bien integrado (no invasor). Frutos secos al fondo. El tiempo en vidrio ha pulido cada nota.',
           boca:
-            'Suave y balanceado. El tiempo de reposo en vidrio ha redondeado los sabores, eliminando la agresividad del alcohol y resaltando notas frutales y de agave maduro.',
+            'Suavidad envolvente. Los años de descanso en vidrio han redondeado las aristas del alcohol joven. Predominan frutales, dulzor de agave maduro y un final mineral limpio — el mezcal en su fase de madurez.',
         },
       },
       {
@@ -94,11 +94,11 @@ export const brands: Brand[] = [
         agave: 'Espadín · Mexicano',
         price: 1150,
         notes: {
-          vista: 'Cristalino con buena densidad.',
+          vista: 'Cristalino con luminosidad interior. Densidad media que habla de balance alcohólico.',
           nariz:
-            'Un equilibrio entre lo frutal del Espadín y lo herbáceo del Mexicano. Aparecen notas de frutos secos y semillas tostadas.',
+            'Tensión creativa: cítricos del Espadín chocan con especias del Mexicano. Frutos secos (almendra, avellana) medían entre ambas personalidades. Fondo mineral complejo.',
           boca:
-            'Gran estructura. La dulzura inicial se transforma en un final complejo, especiado y con una mineralidad característica del agua de pozo utilizada en su destilación.',
+            'Estructura en capas: entrada frutal dulce, cuerpo especiado robusto, final mineral y fumado. La suma es mayor que sus partes — un diálogo entre tradición (Mexicano) e innovación (Espadín).',
         },
       },
       {
@@ -107,11 +107,11 @@ export const brands: Brand[] = [
         agave: 'Espadín · Tobasiche · Mexicano',
         price: 1380,
         notes: {
-          vista: 'Brillante, con un perlado fino y constante.',
+          vista: 'Perlado fino y constante — la firma de un ensamble de tres agaves en perfecta armonía.',
           nariz:
-            'Muy compleja debido al Tobasiche. Notas de madera húmeda, resina y un trasfondo herbal silvestre.',
+            'Complejidad orquestal. El Tobasiche aporta madera y resina. El Espadín, frescura cítrica. El Mexicano, ancla especiada. Todo unido por un humo profundo que evoca la noche en el campo.',
           boca:
-            'Una experiencia robusta. Se perciben capas de sabor que van desde lo dulce hasta lo amaderado, con una textura persistente que deja un recuerdo de humo y tierra.',
+            'Robustez elegante. Capas que revelan sabores nuevos en cada sorbo: dulzor, especias, humo, madera mojada, tierra húmeda. Persistencia larga — el final no termina, resuena.',
         },
       },
     ],
@@ -132,11 +132,11 @@ export const brands: Brand[] = [
         price: 980,
         notes: {
           vista:
-            'Cristalino, brillante, con un perlado (rosario) que se forma rápidamente al agitar la botella.',
+            'Cristalino refulgente. El perlado (rosario) forma rápidamente — el sello de un mezcal bien fermentado, bien destilado.',
           nariz:
-            'Predominan las notas de agave cocido y mieles dulces. Se percibe un ahumado ligero y equilibrado con destellos de cítricos y hierbas silvestres.',
+            'Agave cocido profundo, dulces de miel silvestre. Un ahumado ligero y bien controlado que recuerda al carbón vegetal, no opresivo. Fondo de cítricos verdes y hierba de montaña.',
           boca:
-            'Es suave y sedoso en el paladar. Presenta un equilibrio entre la dulzura del agave maduro y un final ligeramente ahumado y terroso.',
+            'Sedoso desde el primer contacto. El dulzor del agave maduro contrasta con un ahumado presente pero amable. El final es terroso y mineral — la Sierra de Miahuatlán expresada en vidrio.',
         },
       },
       {
@@ -146,11 +146,11 @@ export const brands: Brand[] = [
         price: 1780,
         notes: {
           vista:
-            'Limpio y transparente, con una densidad media que se refleja en sus piernas persistentes en la copa.',
+            'Cuerpo medio con transparencia plateada. Las "lágrimas" descienden con elegancia — cada gota cuenta una historia de lentitud y paciencia.',
           nariz:
-            'Perfil aromático muy complejo y delicado. Sobresalen las notas florales (rosas y flores de campo) acompañadas de un aroma a fruta tropical madura.',
+            'Floral complejo: rosas silvestres, flores de azahar. Tras la flor, frutas tropicales maduras (mango, papaya), un toque de mantequilla. Trasfondo mineral vivo.',
           boca:
-            'Entrada dulce y frutal. Su cuerpo es robusto pero amable, con un retrogusto largo que deja sensaciones de mantequilla y un toque mineral sutil.',
+            'Untuoso y noble. La dulzura frutal se abre hacia una estructura más firme, con minerales claros (agua calcárea de pozo). Retrogusto largo y elegante — flores, frutas, minerales en armonía.',
         },
       },
       {
@@ -159,11 +159,11 @@ export const brands: Brand[] = [
         agave: 'Espadín · Tobalá',
         price: 1580,
         notes: {
-          vista: 'Gran brillantez y transparencia, con destellos plateados.',
+          vista: 'Brillante y transparente, con destellos plateados claros. Densidad visible pero no pesado.',
           nariz:
-            'Una mezcla armoniosa que combina el carácter cítrico del Espadín con la elegancia floral del Tobalá. Se detectan notas de frutos secos y un fondo de pino.',
+            'Fusión armónica: cítricos frescos del Espadín enlazados con flores del Tobalá. Frutos secos como puente entre ambos. Fondo de pino verde y minerales limpios.',
           boca:
-            'Ofrece una explosión de sabores; primero el dulzor frutal seguido de una estructura más firme y herbácea. El final es persistente, equilibrando perfectamente el humo con la frescura del agave.',
+            'Explosión sensorial equilibrada. Dulzura frutal al inicio, seguida de especias sutiles y una estructura mineral firme. El humo es presencia, no protagonista. Final persistente y sofisticado.',
         },
       },
       {
@@ -172,11 +172,11 @@ export const brands: Brand[] = [
         agave: 'Tepeztate',
         price: 1950,
         notes: {
-          vista: 'Cristalino con matices luminosos.',
+          vista: 'Cristalino con matices luminosos. Densidad media-alta que habla de su complejidad inherente.',
           nariz:
-            'Aroma intensamente herbal y vegetal (pimiento verde, hierbabuena). Es el más "salvaje" de la línea en nariz, con notas marcadas de tierra húmeda.',
+            'Lo "salvaje" hecho fragancia: pimiento verde, hierbabuena silvestre, eucalipto. Tierra mojada y raíces vivas. Sin suavidad — es la sierra sin domesticar, pura mineralidad agresiva en buenos términos.',
           boca:
-            'En boca es potente y con carácter. Sus sabores son marcadamente especiados y minerales, con un final seco y persistente que recuerda a las raíces y plantas silvestres.',
+            'Potencia controlada. Especiado puro (pimienta verde, anís) se mezcla con sabores de raíz y mineral. Seco al final, persistente, ligeramente álgido. Es un mezcal para respetar, no para beber apresuradamente.',
         },
       },
     ],
@@ -196,11 +196,11 @@ export const brands: Brand[] = [
         agave: 'Espadín',
         price: 850,
         notes: {
-          vista: 'Cristalino y brillante, con una densidad ligera a media y un perlado limpio.',
+          vista: 'Cristalino luminoso, densidad ligera. Perlado limpio que habla de una fermentación espontánea perfecta en Matatlán.',
           nariz:
-            'Aromas dulces predominantes de agave cocido y melaza. Se perciben notas frutales de plátano y manzana, con un ahumado muy tenue que recuerda al carbón vegetal.',
+            'Agave dulce dominante (melaza, miel). Frutas: plátano maduro, manzana. Un ahumado tenue — casi una caricia — que recuerda al carbón vegetal. Aire fresco al fondo.',
           boca:
-            'Entrada suave y fresca. En el paladar es predominantemente dulce y cítrico, con una textura fluida que facilita la apreciación de sus notas de hierba fresca. El final es corto y limpio.',
+            'Entrada suave y acercable. En paladar: dulzor cítrico de agave joven, hierba fresca, una textura etérea. Final corto pero satisfecho — es el mezcal de iniciación, la puerta que abre.',
         },
       },
       {
@@ -209,11 +209,11 @@ export const brands: Brand[] = [
         agave: 'Tobalá',
         price: 1650,
         notes: {
-          vista: 'Cuerpo medio, transparente con destellos plateados muy vivos.',
+          vista: 'Cuerpo medio con plateado vivo. Las "lágrimas" brillan como estrellas en la copa — índice de un destilado fino.',
           nariz:
-            'Perfil marcadamente floral y silvestre. Notas de flores de azahar y un toque sutil de resina de pino y tierra seca.',
+            'Floral silvestre puro: flores de agave, azahar, un toque de resina. Sutileza que impresiona. Fondo mineral de tierra seca y rocas de primavera.',
           boca:
-            'Ataque untuoso. Se confirman las notas frutales y un dulzor que recuerda al piloncillo. Es un mezcal complejo pero muy balanceado, con un final persistente que deja un recuerdo de frutos secos.',
+            'Untuoso entrada. Notas frutales (durazno, albaricoque) que recuerdan a piloncillo derretido. Complejo pero balanceado — cada elemento en su lugar. Retrogusto largo de frutos secos y flores.',
         },
       },
       {
@@ -222,11 +222,11 @@ export const brands: Brand[] = [
         agave: 'Tepeztate',
         price: 1850,
         notes: {
-          vista: 'Limpio y brillante, con piernas (lágrimas) que descienden con lentitud en la copa.',
+          vista: 'Cristalino y brillante. Las "lágrimas" descienden lentamente — evidencia de estructura alcohólica bien controlada.',
           nariz:
-            'Aroma herbal intenso. Sobresalen las notas de pimiento verde, hierbas de campo y un carácter mineral muy marcado (piedra húmeda).',
+            'Herbal intenso desde el primer contacto: pimiento verde, hierbabuena agresiva, minerales crudos (sílex, piedra pómez). Carácter salvaje y sin domesticar.',
           boca:
-            'Potente y estructurado. Especiado en el paladar con sabores que evocan la raíz del agave y un final seco, persistente y ligeramente picante.',
+            'Potencia robusta y presente. Especiado puro en el paladar (pimienta, anís), seguido de minerales secos (piedra, tiza). Final seco y persistente — el agave silvestre en su máxima expresión.',
         },
       },
       {
@@ -235,11 +235,11 @@ export const brands: Brand[] = [
         agave: 'Espadín · Tobalá',
         price: 1450,
         notes: {
-          vista: 'Cristalino con gran luminosidad.',
+          vista: 'Cristalino con luminosidad palpable. Densidad media que refleja la armonía de sus componentes.',
           nariz:
-            'Un equilibrio aromático entre lo frutal y lo floral. Se perciben capas de aroma que van desde el agave dulce hasta un fondo de hierbabuena.',
+            'Diálogo aromático perfecto: frutas dulces del Espadín (cítricos, manzana) entrelazadas con flores del Tobalá (azahar, rosa silvestre). Fondo herbal que media ambos.',
           boca:
-            'Ofrece una experiencia redonda; combina la suavidad de la entrada del Espadín con la complejidad y el cuerpo del Tobalá. El retrogusto es elegante, mezclando notas de humo suave con un final dulce y mineral.',
+            'Redondez elegante. La entrada frutal (dulce) transita suavemente hacia una estructura más floral y mineral. El humo es sutil, amable. Retrogusto largo y grato — equilibrio hecho bebida.',
         },
       },
     ],
@@ -259,11 +259,11 @@ export const brands: Brand[] = [
         agave: 'Maíz Blanco Nativo',
         price: 1200,
         notes: {
-          vista: 'Color oro pálido, muy limpio y brillante.',
+          vista: 'Oro pálido y cristalino — la luz atraviesa sin obstáculos, revelando la pureza del maíz blanco de la Sierra Juárez.',
           nariz:
-            'Aromas sutiles y frescos. Predomina el maíz tostado, notas de vainilla suave y un ligero toque de manzana verde y pera.',
+            'Delicadeza en forma líquida. Maíz tostado suave, vainilla sutil (no invasiva), manzana verde recién cortada. Un whiskey que susurra, no grita. Aire fresco de altura.',
           boca:
-            'Es el más ligero de la familia. Entrada suave con sabores de mantequilla, almendras y un final limpio con un toque de pimienta blanca.',
+            'Entrada suave y mantecosa. Sabores de cereales dulces, almendra, un toque de pimienta blanca que sorprende. Es elegante, acercable — el maíz blanco en su mejor expresión.',
         },
       },
       {
@@ -272,11 +272,11 @@ export const brands: Brand[] = [
         agave: 'Maíz Amarillo Nativo',
         price: 1200,
         notes: {
-          vista: 'Tono ámbar claro con reflejos dorados.',
+          vista: 'Ámbar claro con reflejos dorados intensos — el color de la cosecha madura.',
           nariz:
-            'Perfil más robusto que el blanco. Notas marcadas de palomitas de maíz, caramelo, miel y un fondo de madera de roble tostada.',
+            'Energía pura del maíz: palomitas de maíz tostado, caramelo derretido, miel silvestre. Fondo de roble tostado (de la barrica). Un perfil robusto y acogedor.',
           boca:
-            'Cuerpo medio y untuoso. Sabores de cereales dulces, pan horneado y un toque de canela. El final es seco y persistente, con una nota de frutos secos.',
+            'Cuerpo medio y untuoso. Cereales dulces (maíz dulce), pan horneado recién sacado del fuego, canela sutil. Final seco y persistente — la calidez de la sierra en cada sorbo.',
         },
       },
       {
@@ -285,11 +285,11 @@ export const brands: Brand[] = [
         agave: 'Maíz Negro Nativo',
         price: 1350,
         notes: {
-          vista: 'Color ámbar profundo, cobrizo.',
+          vista: 'Ámbar profundo con matices cobrizos casi opacos — el color del misterio y la profundidad.',
           nariz:
-            'Aroma complejo y profundo. Notas intensas de frutos rojos secos (pasas, ciruela pasa), chocolate oscuro y cuero.',
+            'Complejidad madura. Frutos rojos deshidratados (pasas, ciruela pasa), chocolate negro amargo, cuero antiguo. Un whiskey que habla de tiempo y maduración.',
           boca:
-            'Estructura firme. En paladar destacan las notas de cacao, cerezas negras y un ahumado muy sutil proveniente de la barrica. Es un whisky con mucha personalidad y un final largo y especiado.',
+            'Estructura firme y presente. Cacao intenso, cerezas negras, un ahumado muy sutil que proviene del contacto con la barrica. Final largo, especiado y noble — un whiskey para meditación.',
         },
       },
       {
@@ -298,11 +298,11 @@ export const brands: Brand[] = [
         agave: 'Maíz Rojo Nativo',
         price: 1350,
         notes: {
-          vista: 'Color ámbar con matices rojizos y brillantes.',
+          vista: 'Ámbar con matices rojizos radiantes — el color del fuego contenido en vidrio.',
           nariz:
-            'Perfil marcadamente dulce y especiado. Notas de marzapán, nuez moscada y un aroma floral inusual que recuerda al hibisco (flor de jamaica).',
+            'Dulzura y especias en tensión armónica. Marzapán delicado, nuez moscada, un toque floral inesperado (hibisco). La Sierra Juárez expresada en aromas.',
           boca:
-            'Entrada cálida. Predominan sabores de mermelada de frutas, regaliz y madera dulce. Tiene un equilibrio excelente entre el dulzor del maíz rojo y la astringencia de la barrica.',
+            'Entrada cálida y envolvente. Mermelada de frutas (cereza, fresa), regaliz suave, madera dulce de la barrica. Equilibrio excelente entre dulzor y astringencia — es generoso sin ser pegajoso.',
         },
       },
       {
@@ -311,11 +311,11 @@ export const brands: Brand[] = [
         agave: 'Maíz Morado Nativo',
         price: 1350,
         notes: {
-          vista: 'Dorado intenso con reflejos caoba.',
+          vista: 'Dorado intenso con reflejos caoba profundos. La luz se absorbe, no refleja — índice de concentración alcohólica y madurez.',
           nariz:
-            'Notas dulces de frutas tropicales deshidratadas, vainilla intensa y un toque de caramelo quemado.',
+            'Frutas tropicales deshidratadas (mango, papaya), vainilla pronunciada (de la barrica), caramelo quemado (notas de roble tostado). Perfil amable y seductor.',
           boca:
-            'Textura sedosa. Sabores que evocan al maíz dulce, con notas de melaza y un final que recuerda a la cáscara de cítricos confitada.',
+            'Textura sedosa que vuelve y vuelve. Maíz dulce auténtico, melaza, confituras. El final recuerda a cáscara de cítricos confitada — amargo controlado que invita a otro sorbo.',
         },
       },
     ],
