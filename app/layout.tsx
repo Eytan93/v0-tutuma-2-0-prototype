@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className="bg-background">
-      <body className={`${montserrat.variable} ${cormorant.variable} font-sans antialiased`}>
+    <html lang="es" className="bg-background" suppressHydrationWarning>
+      <body className={`${montserrat.variable} ${cormorant.variable} font-sans antialiased`} suppressHydrationWarning>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
