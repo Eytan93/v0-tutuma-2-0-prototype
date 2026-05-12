@@ -22,7 +22,10 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
         product={selectedProduct}
         brand={activeBrand}
         onBack={() => setSelectedProduct(null)}
-        onBackToBrands={() => { setSelectedProduct(null); setSubView('grid') }}
+        onBackToBrands={() => {
+          setSelectedProduct(null)
+          setSubView('grid')
+        }}
         onGoToTienda={() => onNavigate('tienda')}
       />
     )
@@ -106,7 +109,7 @@ function BrandView({
           className="flex items-center gap-2 text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase mb-12 font-semibold"
         >
           <ArrowLeft size={12} />
-          Todas las marcas
+          Colectivos
         </button>
         <div
           className="w-1.5 h-12 mb-8"
