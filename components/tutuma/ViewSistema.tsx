@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import Image from 'next/image'
 import { ArrowRight } from 'lucide-react'
 import { sistemaCapitulos, brands } from '@/lib/tutuma-data'
 
@@ -9,15 +9,28 @@ interface ViewSistemaProps {
 }
 
 export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
-  const [activeCapitulo, setActiveCapitulo] = useState<number | null>(null)
-
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF]">
-      {/* Hero */}
-      <section className="min-h-screen flex flex-col justify-end pb-24 px-6 md:px-16 lg:px-24 pt-32 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-px h-full bg-[#F3F0DF]/10" />
-        <div className="absolute top-0 right-24 w-px h-full bg-[#F3F0DF]/5 hidden md:block" />
-        <div className="max-w-5xl">
+
+      {/* ── Hero — full-bleed photographic background ── */}
+      <section className="relative min-h-screen flex flex-col justify-end pb-24 px-6 md:px-16 lg:px-24 pt-32 overflow-hidden">
+        {/* Background photo */}
+        <Image
+          src="/images/hero-agave.jpg"
+          alt="Campo de agaves en Oaxaca"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Dark overlay — keeps all text 100% legible */}
+        <div className="absolute inset-0 bg-[#1A1A1A]/70" />
+        {/* Subtle vertical lines */}
+        <div className="absolute top-0 left-0 w-px h-full bg-[#F3F0DF]/10 z-10" />
+        <div className="absolute top-0 right-24 w-px h-full bg-[#F3F0DF]/5 hidden md:block z-10" />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-5xl">
           <p className="text-[#FACC15] text-xs tracking-[0.4em] uppercase mb-8 font-sans">
             Tutuma 2.0 — Sistema de Acceso
           </p>
@@ -25,7 +38,7 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
             El mezcal<br />
             <em className="italic text-[#FACC15]">como territorio</em>
           </h1>
-          <p className="font-sans text-[#F3F0DF]/60 text-base leading-relaxed max-w-xl mb-12">
+          <p className="font-sans text-[#F3F0DF]/70 text-base leading-relaxed max-w-xl mb-12">
             Un sistema de acceso a destilados artesanales de México. Conectamos origen,
             maestro y paladar a través de Operadores de Conexión comprometidos.
           </p>
@@ -39,68 +52,68 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
             </button>
             <button
               onClick={() => onNavigate('experiencias')}
-              className="flex items-center gap-3 border border-[#F3F0DF]/30 text-[#F3F0DF]/70 px-8 py-4 text-xs tracking-[0.2em] uppercase hover:border-[#F3F0DF] hover:text-[#F3F0DF] transition-colors duration-300"
+              className="flex items-center gap-3 border border-[#F3F0DF]/40 text-[#F3F0DF]/80 px-8 py-4 text-xs tracking-[0.2em] uppercase hover:border-[#F3F0DF] hover:text-[#F3F0DF] transition-colors duration-300"
             >
               Ver Experiencias
             </button>
           </div>
         </div>
-        <div className="absolute bottom-24 right-6 md:right-16 text-right hidden md:block">
-          <p className="font-serif text-7xl text-[#F3F0DF]/8 select-none">7</p>
-          <p className="text-xs tracking-[0.3em] uppercase text-[#F3F0DF]/20 font-sans">capítulos</p>
+
+        <div className="absolute bottom-24 right-6 md:right-16 text-right hidden md:block z-10">
+          <p className="font-serif text-8xl text-[#F3F0DF]/10 select-none leading-none">7</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-[#F3F0DF]/25 font-sans">capítulos</p>
         </div>
       </section>
 
-      {/* Los 7 Capítulos */}
+      {/* ── Los 7 Capítulos — immersive photo cards ── */}
       <section className="bg-[#F3F0DF] text-[#1A1A1A] py-24 px-6 md:px-16 lg:px-24">
         <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-3 font-sans">El Sistema</p>
         <h2 className="font-serif text-4xl md:text-5xl mb-4 text-balance">
           Siete capítulos del origen
         </h2>
         <p className="font-sans text-[#1A1A1A]/50 text-sm leading-relaxed max-w-md mb-16">
-          El mezcal artesanal no se entiende en una etiqueta. Se entiende en siete momentos que van
-          desde la tierra hasta tu copa.
+          El mezcal artesanal no se entiende en una etiqueta. Se entiende en siete momentos
+          que van desde la tierra hasta tu copa.
         </p>
 
-        <div className="divide-y divide-[#C8C4B0]">
-          {sistemaCapitulos.map((cap, i) => {
-            const isOpen = activeCapitulo === i
-            return (
-              <div key={cap.number}>
-                <button
-                  onClick={() => setActiveCapitulo(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between py-6 group text-left"
-                  aria-expanded={isOpen}
-                >
-                  <div className="flex items-baseline gap-6">
-                    <span className="font-serif text-[#1A1A1A]/20 text-sm w-6 shrink-0">
-                      {cap.number}
-                    </span>
-                    <span className="font-serif text-2xl md:text-3xl group-hover:text-[#6B7F5E] transition-colors duration-300">
-                      {cap.title}
-                    </span>
-                  </div>
-                  <span
-                    className={`text-[#6B7F5E] text-lg leading-none transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}
-                    aria-hidden="true"
-                  >
-                    +
-                  </span>
-                </button>
-                {isOpen && (
-                  <div className="pb-8 pl-12">
-                    <p className="font-sans text-sm leading-relaxed text-[#1A1A1A]/60 max-w-2xl">
-                      {cap.description}
-                    </p>
-                  </div>
-                )}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {sistemaCapitulos.map((cap) => (
+            <article
+              key={cap.number}
+              className="group relative overflow-hidden"
+            >
+              {/* Photo */}
+              <div className="relative h-72 md:h-80 w-full overflow-hidden">
+                <Image
+                  src={cap.image}
+                  alt={cap.title}
+                  fill
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                {/* Gradient overlay from bottom */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/80 via-[#1A1A1A]/20 to-transparent" />
+                {/* Chapter number — top left */}
+                <span className="absolute top-5 left-5 font-serif text-[#F3F0DF]/40 text-xs tracking-[0.3em]">
+                  {cap.number}
+                </span>
+                {/* Title overlaid on photo */}
+                <h3 className="absolute bottom-5 left-5 font-serif text-2xl md:text-3xl text-[#F3F0DF] leading-tight">
+                  {cap.title}
+                </h3>
               </div>
-            )
-          })}
+              {/* Description below photo */}
+              <div className="bg-[#EDEADE] px-6 py-6 border-b border-[#C8C4B0]">
+                <p className="font-sans text-sm leading-relaxed text-[#1A1A1A]/65">
+                  {cap.description}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
-      {/* Brands overview */}
+      {/* ── Brands overview ── */}
       <section className="bg-[#2C2C2C] py-24 px-6 md:px-16 lg:px-24">
         <p className="text-xs tracking-[0.4em] uppercase text-[#FACC15] mb-4 font-sans">Portfolio</p>
         <h2 className="font-serif text-4xl md:text-5xl text-[#F3F0DF] mb-16 text-balance">
@@ -114,7 +127,7 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
               className="bg-[#2C2C2C] p-10 hover:bg-[#1A1A1A] transition-colors duration-300 group text-left"
             >
               <div
-                className="w-1 h-8 mb-6 transition-colors duration-300"
+                className="w-1 h-8 mb-6"
                 style={{ backgroundColor: brand.accentColor }}
               />
               <p className="text-xs tracking-[0.3em] uppercase mb-3 font-sans" style={{ color: brand.accentColor }}>
@@ -137,7 +150,7 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
         </div>
       </section>
 
-      {/* Footer CTA */}
+      {/* ── Footer CTA ── */}
       <section className="bg-[#1A1A1A] py-24 px-6 md:px-16 lg:px-24 text-center border-t border-[#2C2C2C]">
         <p className="font-serif text-2xl italic text-[#F3F0DF]/30 mb-8">
           &ldquo;No es cata. Es territorio.&rdquo;
@@ -149,6 +162,7 @@ export default function ViewSistema({ onNavigate }: ViewSistemaProps) {
           Conocer las Experiencias <ArrowRight size={12} />
         </button>
       </section>
+
     </main>
   )
 }

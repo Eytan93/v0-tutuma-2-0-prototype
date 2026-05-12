@@ -335,43 +335,50 @@ export const sistemaCapitulos = [
   {
     number: '01',
     title: 'El Tiempo',
+    image: '/images/cap-01-tiempo.jpg',
     description:
-      'El agave es tiempo condensado. Cada planta necesita entre 7 y 35 años para alcanzar su madurez — una paciencia que la industria moderna no conoce.',
+      'El maguey no se apresura. Respetamos los años de maduración biológica necesarios para que la tierra, el clima y los minerales se expresen plenamente en el corazón de la piña. Resistimos la exigencia de volumen y velocidad del mercado industrial, entendiendo que el tiempo es el primer ingrediente innegociable de un destilado honesto.',
   },
   {
     number: '02',
     title: 'La Milpa',
+    image: '/images/cap-02-milpa.jpg',
     description:
-      'El sistema de cultivo ancestral que alimenta y sostiene. El agave convive con maíz, frijol y calabaza en una simbiosis que la modernidad olvidó.',
+      'El maíz nativo no es solo un insumo, es el pilar del sistema de soporte y la soberanía alimentaria de las comunidades. Sin la milpa, no hay territorio sustentable. Defendemos las variedades endémicas y el policultivo tradicional frente al monocultivo, asegurando la resiliencia del suelo y la nutrición de quienes trabajan la tierra.',
   },
   {
     number: '03',
     title: 'Polinizadores',
+    image: '/images/cap-03-polinizadores.jpg',
     description:
-      'Murciélagos, colibríes y abejas son los mensajeros silenciosos. Sin ellos, no hay diversidad genética. Sin diversidad, no hay mezcal.',
+      'Los guardianes invisibles del ecosistema. Protegemos el ciclo de vida reproductivo permitiendo que un porcentaje de la siembra alcance la floración (quiote). Esto alimenta a los murciélagos nectarívoros y aves, garantizando la polinización cruzada y la diversidad genética vital para la supervivencia a largo plazo de los agaves silvestres.',
   },
   {
     number: '04',
     title: 'Fermentación Viva',
+    image: '/images/cap-04-fermentacion.jpg',
     description:
-      'Las levaduras silvestres del lugar son únicas. El mezcal artesanal fermenta al aire libre, capturando el espíritu del terruño en cada lote.',
+      'Procesos honestos que mantienen la microbiología local intacta. Creemos en una fermentación espontánea y abierta, guiada por las levaduras salvajes y bacterias del entorno, sin el uso de aceleradores, levaduras comerciales ni aditivos químicos. Es aquí donde el verdadero \'terroir\' y la huella del clima se impregnan en el perfil líquido.',
   },
   {
     number: '05',
     title: 'El Quiebre',
+    image: '/images/cap-05-quiebre.jpg',
     description:
-      'La jima — el corte del agave — es un momento de ruptura y de ofrenda. El maestro decide cuándo la planta está lista. Nadie más.',
+      'Reconocemos que los recursos son finitos. Identificamos el límite exacto donde la demanda del mercado amenaza la regeneración natural y la integridad de la tradición. En ese punto de quiebre, decimos \'no\' al sobre-extractivismo. Nuestro compromiso es con el equilibrio del ecosistema, no con la escalabilidad infinita comercial.',
   },
   {
     number: '06',
     title: 'Tradición',
+    image: '/images/cap-06-tradicion.jpg',
     description:
-      'El conocimiento se transmite de maestro a aprendiz, de generación en generación. No hay receta escrita. Solo memoria viva.',
+      'Combatimos el marketing vacío con trazabilidad absoluta y transparencia radical. La tradición no es un eslogan, es el conocimiento generacional de las familias productoras. Garantizamos el pago justo, el reconocimiento directo a los maestros operativos y la preservación de las técnicas ancestrales sin apropiación.',
   },
   {
     number: '07',
     title: 'Sostener',
+    image: '/images/cap-07-sostener.jpg',
     description:
-      'Tutuma conecta origen con mesa. Cada botella que llega a ti es un acto de conservación: del agave, del maestro, de la comunidad.',
+      '1 Botella = 1 Acción. El acto de consumo se convierte en el motor de la regeneración. Este último paso cierra el ciclo biocultural asegurando que la demanda del mercado nutra el territorio. Cada adquisición financia directamente proyectos de infraestructura natural: desde la reforestación estratégica para retener agua en los acuíferos, hasta el fortalecimiento de bancos de semillas criollas que salvaguardan la diversidad genética frente a la crisis climática.',
   },
 ]
