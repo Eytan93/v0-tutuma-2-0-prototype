@@ -15,8 +15,8 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
 
   const activeBrand = brands.find((b) => b.id === subView)
-  console.log('[v0] ViewProductos - subView:', subView, 'activeBrand:', activeBrand?.name, 'selectedProduct:', selectedProduct?.name)
 
+  // If viewing a specific product
   if (selectedProduct && activeBrand) {
     return (
       <ProductDetail
@@ -32,6 +32,7 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
     )
   }
 
+  // If viewing a specific brand
   if (activeBrand) {
     return (
       <BrandView
@@ -42,6 +43,7 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
     )
   }
 
+  // Main grid view
   return (
     <main className="min-h-screen bg-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
@@ -49,7 +51,7 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
           Explorador Narrativo
         </p>
         <h1 className="font-serif text-6xl md:text-7xl text-[#1A1A1A] mb-4 text-balance font-bold">
-          Marcas de Origen
+          Colectivos
         </h1>
         <p className="font-sans text-lg md:text-xl text-[#1A1A1A]/60 leading-relaxed mb-16 max-w-2xl">
           Cuatro expresiones del territorio oaxaqueño. Selecciona una marca para explorar
@@ -105,13 +107,12 @@ function BrandView({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
-
-        {/* Back button */}
+        {/* Back button - clearly visible */}
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-[#F3F0DF]/50 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans mb-12"
+          className="flex items-center gap-3 text-[#FACC15] hover:text-[#F3F0DF] transition-colors text-sm tracking-[0.15em] uppercase font-semibold font-sans mb-16 py-3"
         >
-          <ArrowLeft size={14} />
+          <ArrowLeft size={18} />
           Todos los Colectivos
         </button>
 
@@ -201,7 +202,6 @@ function BrandView({
             </button>
           ))}
         </div>
-
       </div>
     </main>
   )
@@ -229,20 +229,19 @@ function ProductDetail({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
-
-        {/* Breadcrumb back navigation */}
-        <div className="flex items-center gap-3 mb-12">
+        {/* Breadcrumb navigation - clearly visible */}
+        <div className="flex items-center gap-4 mb-16">
           <button
             onClick={onBackToBrands}
-            className="flex items-center gap-2 text-[#F3F0DF]/50 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
+            className="flex items-center gap-3 text-[#FACC15] hover:text-[#F3F0DF] transition-colors text-sm tracking-[0.15em] uppercase font-semibold font-sans py-3"
           >
-            <ArrowLeft size={14} />
+            <ArrowLeft size={18} />
             Todos los Colectivos
           </button>
-          <span className="text-[#F3F0DF]/20 text-xs">/</span>
+          <span className="text-[#F3F0DF]/30 text-sm">/</span>
           <button
             onClick={onBack}
-            className="text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase font-semibold font-sans"
+            className="text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-sm tracking-[0.15em] uppercase font-semibold font-sans py-3"
           >
             {brand.name}
           </button>
@@ -308,7 +307,6 @@ function ProductDetail({
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
           </button>
         </div>
-
       </div>
     </main>
   )
