@@ -15,6 +15,7 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
 
   const activeBrand = brands.find((b) => b.id === subView)
+  console.log('[v0] ViewProductos - subView:', subView, 'activeBrand:', activeBrand?.name, 'selectedProduct:', selectedProduct?.name)
 
   if (selectedProduct && activeBrand) {
     return (
