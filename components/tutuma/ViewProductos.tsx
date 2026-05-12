@@ -62,7 +62,10 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
           {brands.map((brand) => (
             <button
               key={brand.id}
-              onClick={() => setSubView(brand.id)}
+              onClick={() => {
+                console.log('[v0] Clicking brand:', brand.id)
+                setSubView(brand.id)
+              }}
               className="group bg-[#F3F0DF] hover:bg-[#1A1A1A] transition-colors duration-500 p-10 text-left"
             >
               <div
