@@ -187,11 +187,9 @@ export const brands: Brand[] = [
         agave: 'Espadín · Tobalá · Mexicano',
         price: 1580,
         notes: {
-          vista: 'Cristalino de fino aperlado, con brillo intenso.',
-          nariz:
-            'Fusión armónica de tres personalidades: dulzor del Espadín, elegancia floral del Tobalá y carácter especiado del Mexicano. Notas de maguey cocido, frutos secos y un fondo mineral.',
-          boca:
-            'Equilibrio excepcional entre dulzura, complejidad y potencia. Entrada frutal que evoluciona hacia especias y minerales. Final largo con persistencia de maguey cocido y un toque ahumado sutil.',
+          vista: '',
+          nariz: '',
+          boca: '',
         },
       },
     ],
@@ -224,9 +222,9 @@ export const brands: Brand[] = [
         price: 950,
         notes: {
           vista: 'Cristalino con ligeros matices amarillos.',
-          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero con notas del gusano de maguey.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
           boca:
-            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca. El gusano aporta un toque umami distintivo.',
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
         },
       },
       {
@@ -236,9 +234,9 @@ export const brands: Brand[] = [
         price: 1100,
         notes: {
           vista: 'Cristalino con ligeros matices amarillos.',
-          nariz: 'Maguey cocido concentrado, aromas cítricos intensos y ahumado ligero.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
           boca:
-            'Sabor cítrico más intenso, dulzor pronunciado del agave capón, ahumado ligero y de gran persistencia en boca.',
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
         },
       },
       {
@@ -247,10 +245,10 @@ export const brands: Brand[] = [
         agave: 'Espadín (Agave angustifolia)',
         price: 1200,
         notes: {
-          vista: 'Tonos dorados sutiles por el reposo en madera.',
-          nariz: 'Maguey cocido, notas de vainilla y madera, aromas cítricos suaves.',
+          vista: '',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
           boca:
-            'Sabor redondo y suave, con notas de roble que complementan el dulzor del agave. Persistencia media con final amaderado.',
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
         },
       },
       {
@@ -296,10 +294,11 @@ export const brands: Brand[] = [
         subtitle: 'Edición Especial',
         price: 1100,
         notes: {
-          vista: 'Cristalino con tonos dorados sutiles.',
-          nariz: 'Notas especiadas de anís, canela y naranja, evocando el tradicional pan de muerto.',
+          vista: 'Cristalino y brillante, con ligeros matices dorados.',
+          nariz:
+            'Aromas dulces y especiados que recuerdan al pan de muerto: anís, cáscara de naranja y agave cocido, con un sutil fondo ahumado.',
           boca:
-            'Sabores dulces y especiados que recuerdan al pan de muerto tradicional. Final cálido y reconfortante.',
+            'Suave y equilibrado, con notas de pan dulce, especias y un ahumado ligero que redondea el perfil.',
         },
       },
       {
@@ -309,10 +308,10 @@ export const brands: Brand[] = [
         subtitle: 'Edición Especial',
         price: 1100,
         notes: {
-          vista: 'Cristalino con matices dorados brillantes.',
-          nariz: 'Notas florales distintivas de cempasúchil, maguey cocido y un toque herbal.',
+          vista: 'Cristalino y brillante, con reflejos plateados.',
+          nariz: 'Elegante y floral, con notas de agave cocido, cempasúchil, miel y un toque cítrico.',
           boca:
-            'Sabor floral único de la flor de cempasúchil que complementa el perfil del mezcal. Final aromático y memorable.',
+            'Sedoso y herbal, con sabores florales, cáscara de naranja y un amargor fino que equilibra el dulzor.',
         },
       },
     ],
@@ -332,12 +331,9 @@ export const brands: Brand[] = [
         agave: 'Maíz Blanco Nativo',
         price: 1200,
         notes: {
-          vista:
-            'Dorado pálido y cristalino, con reflejos luminosos que revelan la suavidad dorada característica del maíz blanco.',
-          nariz:
-            'Delicado y sutil. Notas de maíz tostado, vainilla suave y manzana verde. Un perfil fresco y elegante.',
-          boca:
-            'Entrada suave y mantecosa. Sabores de cereales dulces, almendra y un toque de pimienta blanca. Final limpio y elegante.',
+          vista: '',
+          nariz: '',
+          boca: 'La dulzura luminosa del Blanco. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
@@ -346,11 +342,9 @@ export const brands: Brand[] = [
         agave: 'Maíz Amarillo Nativo',
         price: 1200,
         notes: {
-          vista: 'Ámbar claro con reflejos dorados intensos.',
-          nariz:
-            'Robusto y acogedor. Palomitas de maíz tostado, caramelo, miel silvestre y un fondo de roble tostado.',
-          boca:
-            'Cuerpo medio y untuoso. Cereales dulces, pan horneado, canela sutil. Final seco y persistente con calidez envolvente.',
+          vista: '',
+          nariz: '',
+          boca: 'La suavidad dorada del Amarillo. Seleccionado dentro del Top 20 de los mejores whiskies del mundo por Whisky Advocate. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
@@ -359,10 +353,9 @@ export const brands: Brand[] = [
         agave: 'Maíz Rojo Nativo',
         price: 1350,
         notes: {
-          vista: 'Ámbar con matices rojizos radiantes, estructura especiada.',
-          nariz: 'Dulce y especiado. Marzapán, nuez moscada y un toque floral de hibisco.',
-          boca:
-            'Entrada cálida. Mermelada de frutas, regaliz suave, madera dulce. Equilibrio excelente entre dulzor y astringencia.',
+          vista: '',
+          nariz: '',
+          boca: 'La estructura especiada del Rojo. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
@@ -371,11 +364,9 @@ export const brands: Brand[] = [
         agave: 'Maíz Morado Nativo',
         price: 1350,
         notes: {
-          vista: 'Dorado intenso con reflejos caoba profundos, riqueza frutal evidente.',
-          nariz:
-            'Frutas tropicales deshidratadas, vainilla pronunciada, caramelo quemado. Perfil seductor.',
-          boca:
-            'Textura sedosa. Maíz dulce auténtico, melaza, confituras. Final con cáscara de cítricos confitada.',
+          vista: '',
+          nariz: '',
+          boca: 'La riqueza frutal del Morado. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
@@ -384,11 +375,9 @@ export const brands: Brand[] = [
         agave: 'Maíz Negro Nativo',
         price: 1350,
         notes: {
-          vista: 'Ámbar profundo con matices cobrizos, elegancia tostada.',
-          nariz:
-            'Complejo y maduro. Frutos rojos deshidratados, chocolate negro amargo, cuero antiguo.',
-          boca:
-            'Estructura firme. Cacao intenso, cerezas negras, ahumado sutil de barrica. Final largo, especiado y noble.',
+          vista: '',
+          nariz: '',
+          boca: 'La elegancia tostada del Negro. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
       {
@@ -397,12 +386,9 @@ export const brands: Brand[] = [
         agave: 'Maíz Arcoiris Nativo',
         price: 1450,
         notes: {
-          vista:
-            'Dorado brillante con reflejos multicolor, vitalidad única testimonio de la diversidad de maíces.',
-          nariz:
-            'Complejo y multifacético. Combina notas de todos los maíces: frutas, especias, caramelo y flores.',
-          boca:
-            'Una experiencia única. Capas de sabor que evocan la biodiversidad de la Sierra. Final largo y memorable.',
+          vista: '',
+          nariz: '',
+          boca: 'La vitalidad del Arcoíris. Doblemente destilado en alambiques de cobre y añejado en barricas de roble francés.',
         },
       },
     ],

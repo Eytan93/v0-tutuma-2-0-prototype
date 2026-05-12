@@ -22,6 +22,7 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
         product={selectedProduct}
         brand={activeBrand}
         onBack={() => setSelectedProduct(null)}
+        onBackToBrands={() => { setSelectedProduct(null); setSubView('grid') }}
         onGoToTienda={() => onNavigate('tienda')}
       />
     )
@@ -147,28 +148,42 @@ function BrandView({
                 
                 {/* Preview de las notas */}
                 <div className="space-y-4 mb-8">
-                  <div>
-                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
-                      Vista
-                    </p>
-                    <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
-                      {product.notes.vista}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
-                      Nariz
-                    </p>
-                    <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
-                      {product.notes.nariz}
-                    </p>
-                  </div>
+                  {product.notes.vista && (
+                    <div>
+                      <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
+                        Vista
+                      </p>
+                      <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
+                        {product.notes.vista}
+                      </p>
+                    </div>
+                  )}
+                  {product.notes.nariz && (
+                    <div>
+                      <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
+                        Nariz
+                      </p>
+                      <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
+                        {product.notes.nariz}
+                      </p>
+                    </div>
+                  )}
+                  {!product.notes.vista && !product.notes.nariz && product.notes.boca && (
+                    <div>
+                      <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
+                        Perfil
+                      </p>
+                      <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
+                        {product.notes.boca}
+                      </p>
+                    </div>
+                  )}
                 </div>
               </div>
               
               <div className="flex items-center justify-between pt-6 border-t border-[#F3F0DF]/10">
                 <div className="text-[11px] tracking-[0.15em] uppercase text-[#F3F0DF]/30 group-hover:text-[#F3F0DF]/50 transition-colors font-sans font-semibold">
-                  Vista · Nariz · Boca
+                  {product.notes.vista && product.notes.nariz ? 'Vista · Nariz · Boca' : 'Perfil'}
                 </div>
                 <div className="flex items-center gap-2 text-[#FACC15] group-hover:text-[#F3F0DF] transition-colors">
                   <span className="text-xs tracking-[0.2em] uppercase font-sans font-semibold">
@@ -189,29 +204,41 @@ function ProductDetail({
   product,
   brand,
   onBack,
+  onBackToBrands,
   onGoToTienda,
 }: {
   product: Product
   brand: Brand
   onBack: () => void
+  onBackToBrands: () => void
   onGoToTienda: () => void
 }) {
   const sensorNotes = [
     { label: 'Vista', icon: Eye, content: product.notes.vista },
     { label: 'Nariz', icon: Wind, content: product.notes.nariz },
     { label: 'Boca', icon: Flame, content: product.notes.boca },
-  ]
+  ].filter((n) => n.content)
 
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-2 text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase mb-12"
-        >
-          <ArrowLeft size={12} />
-          {brand.name}
-        </button>
+        {/* Breadcrumb navigation */}
+        <div className="flex items-center gap-3 mb-12">
+          <button
+            onClick={onBackToBrands}
+            className="flex items-center gap-2 text-[#F3F0DF]/30 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase"
+          >
+            <ArrowLeft size={12} />
+            Colectivos
+          </button>
+          <span className="text-[#F3F0DF]/20 text-xs">/</span>
+          <button
+            onClick={onBack}
+            className="text-[#F3F0DF]/40 hover:text-[#FACC15] transition-colors text-xs tracking-[0.2em] uppercase"
+          >
+            {brand.name}
+          </button>
+        </div>
 
         <div
           className="w-1.5 h-10 mb-8"
