@@ -30,37 +30,35 @@ export const brands: Brand[] = [
     region: 'Sola de Vega',
     state: 'Oaxaca',
     description:
-      'El arte de producir mezcal de alta calidad de forma sustentable. Sabores refinados y sutiles con carácter único, resaltando todo el origen y la riqueza de la tradición mezcalera del terruño Solteco.',
+      'Rajabule, nace del orgullo de producir mezcales de alta calidad con técnicas 100% artesanales, logrando sabores refinados y sutiles con carácter único, resaltando todo el origen y la riqueza de la tradición mezcalera del terruño Solteco famosa cuna del mezcal Oaxaqueño.',
     accentColor: '#6B7F5E',
     products: [
       {
         id: 'rajabule-arroqueno-2019',
         name: 'Arroqueño 2019',
-        agave: 'Arroqueño',
+        agave: 'Arroqueño (Agave americana)',
         subtitle: 'Cosecha 2019',
         price: 1450,
         notes: {
-          vista:
-            'Cristalino como buen mezcal joven, con ligeros matices verdes provenientes del agave, de grueso aperlado.',
+          vista: 'Cristalino de grueso aperlado.',
           nariz:
-            'Aromas frutales a plátano, piña y manzana roja, con frescas notas de anís, hierbas del campo, flores y tierra mojada. Al final destellos ahumados de nuez, madera y maguey cocido.',
+            'Un complejo aroma, con notas de cacahuate que armonizan con flores, naranja y frutos dulces. Al final resalta un ligero ahumado, con notas de madera, tierra húmeda y el dulce maguey cocido.',
           boca:
-            'Poderoso con un ligero toque amargo, de gran permanencia en boca, confirma los sabores frutales, armonizando con una fresca sensación de hierba seca, barro y un firme retrogusto a maguey cocido.',
+            'El maguey cocido y las flores, inundan el paladar con un tenue amargor y suaves notas de humo. En el retrogusto se confirma la complejidad de las notas percibidas en nariz, la frescura de la naranja, el mango y las hierbas del campo, armoniza con los frutos secos, la madera y mantequilla.',
         },
       },
       {
         id: 'rajabule-tobala-2022',
         name: 'Tobalá 2022',
-        agave: 'Tobalá',
+        agave: 'Tobalá (Agave potatorum)',
         subtitle: 'Cosecha 2022',
         price: 1680,
         notes: {
-          vista:
-            'Cristalino como buen mezcal joven, con ligeros matices verdes provenientes del agave, de grueso aperlado.',
+          vista: 'Cristalino, limpio y brillante.',
           nariz:
-            'Aromas frutales a plátano, piña y manzana roja, con frescas notas de anís, hierbas del campo, flores y tierra mojada. Al final destellos ahumados de nuez, madera y maguey cocido.',
+            'Resalta el dulce maguey cocido en primera impresión, con un tenue olor a barro y petricor. Seguido de una fresca sensación cítrica y floral, invadiendo en nariz flores del campo, azahares y jazmín. Resaltan las notas finales de frutos secos, pasas y vainilla.',
           boca:
-            'Poderoso con un ligero toque amargo, de gran permanencia en boca, confirma los sabores frutales, armonizando con una fresca sensación de hierba seca, barro y un firme retrogusto a maguey cocido.',
+            'Suave y untuoso al pasar por la boca, resalta con potencia los sabores herbales a té limón y poleo, que invaden al paladar con el paso de los minutos, reafirmando en el retrogusto el dulce maguey cocido.',
         },
       },
       {
@@ -71,7 +69,7 @@ export const brands: Brand[] = [
         price: 1550,
         notes: {
           vista:
-            'Cristalino como buen mezcal joven, con ligeros matices verdes provenientes del agave, de grueso aperlado.',
+            'Cristalino como buen mezcal joven, con ligeras matices verdes provenientes del agave, de grueso aperlado.',
           nariz:
             'Aromas frutales a plátano, piña y manzana roja, con frescas notas de anís, hierbas del campo, flores y tierra mojada. Al final destellos ahumados de nuez, madera y maguey cocido.',
           boca:
@@ -81,14 +79,13 @@ export const brands: Brand[] = [
       {
         id: 'rajabule-espadin-2016',
         name: 'Espadín 2016',
-        agave: 'Espadín',
+        agave: 'Espadín (Agave angustifolia)',
         subtitle: 'Cosecha 2016',
         price: 980,
         notes: {
-          vista:
-            'Cristalino como buen mezcal joven, con ligeros matices verdes provenientes del agave, de grueso aperlado.',
+          vista: 'Cristalino, con ligeras matices amarillas.',
           nariz:
-            'Aromas frutales a plátano, piña y manzana roja, con frescas notas de anís, hierbas del campo, flores y tierra mojada. Al final destellos ahumados de nuez, madera y maguey cocido.',
+            'Frescos aromas a hierba húmeda y frutas verdes, con notas cítricas y destellos finales de barro y tierra seca.',
           boca:
             'Poderoso con un ligero toque amargo, de gran permanencia en boca, confirma los sabores frutales, armonizando con una fresca sensación de hierba seca, barro y un firme retrogusto a maguey cocido.',
         },
@@ -100,12 +97,11 @@ export const brands: Brand[] = [
         subtitle: 'Ensamble 2016',
         price: 1150,
         notes: {
-          vista:
-            'Cristalino como buen mezcal joven, con ligeros matices verdes provenientes del agave, de grueso aperlado.',
+          vista: 'Cristalino, con ligeros matices amarillos.',
           nariz:
-            'Aromas frutales a plátano, piña y manzana roja, con frescas notas de anís, hierbas del campo, flores y tierra mojada. Al final destellos ahumados de nuez, madera y maguey cocido.',
+            'Firmes destellos florales de azahar, seguidos de frutos dulces, plátano y un matiz amaderado de leña húmeda y copal.',
           boca:
-            'Poderoso con un ligero toque amargo, de gran permanencia en boca, confirma los sabores frutales, armonizando con una fresca sensación de hierba seca, barro y un firme retrogusto a maguey cocido.',
+            'Muestra carácter, pero fresco y de paso suave. Se reafirman en paladar el plátano y los matices de leña húmeda y copal. Cierra armoniosamente con un retrogusto de lima y naranja, con un destello final de hierbas y flores.',
         },
       },
       {
@@ -115,8 +111,7 @@ export const brands: Brand[] = [
         subtitle: 'Ensamble 2016',
         price: 1380,
         notes: {
-          vista:
-            'Cristalino, con ligeros matices amarillos.',
+          vista: 'Cristalino, con ligeras matices amarillas.',
           nariz:
             'Un complejo y potente aromático, con primeros destellos de jazmín y naranja. Las notas especiadas de clavo, pimienta y vainilla, armonizan con la frescura de las hierbas del campo y un tenue petricor. El maguey cocido y ligeras notas de humo inundan un breve final.',
           boca:
@@ -131,7 +126,7 @@ export const brands: Brand[] = [
     region: 'Miahuatlán',
     state: 'Oaxaca',
     description:
-      '8 generaciones dedicadas con esmero a la tradición y la pasión del mezcal. Mezcales de alta calidad mediante técnicas 100% artesanales, destacando la riqueza de las tierras en San Isidro Guishe.',
+      'José Lucas es el heredero de una tradición mezcalera que abarca nueve generaciones. Ubicado en San Isidro Guishe, San Luis Amatlán, el palenque familiar destila magueyes endémicos de la región, reconocida como una cuna del mezcal en Oaxaca.',
     accentColor: '#8B6E4E',
     products: [
       {
@@ -140,8 +135,7 @@ export const brands: Brand[] = [
         agave: 'Tepeztate (Agave marmorata)',
         price: 1950,
         notes: {
-          vista:
-            'Cristalino de fino aperlado.',
+          vista: 'Cristalino de fino aperlado.',
           nariz:
             'Complejo y potente, con cuerpo, pero suave y untuoso. Presenta aromas herbales y terrosos, complementados con el dulzor del maguey cocido. Notas de cáscaras de limón y flor de azahar se mezclan delicadamente con matices de frambuesa.',
           boca:
@@ -154,8 +148,7 @@ export const brands: Brand[] = [
         agave: 'Cucharillo (Dasylirion serratifolium)',
         price: 1780,
         notes: {
-          vista:
-            'Cristalino de grueso aperlado.',
+          vista: 'Cristalino de grueso aperlado.',
           nariz:
             'Se perciben aromas frutales, destacando frutos tropicales y plátano maduro, acompañados de notas de frutos secos. También se aprecian aromas terrosos, como tierra seca, junto con un sutil toque de especias y semillas.',
           boca:
@@ -168,8 +161,7 @@ export const brands: Brand[] = [
         agave: 'Madrecuishe (Agave karwinskii)',
         price: 1680,
         notes: {
-          vista:
-            'Cristalino de fino aperlado.',
+          vista: 'Cristalino de fino aperlado.',
           nariz:
             'Potente y complejo, con una textura untuosa y armoniosa. Se aprecian aromas a tierra seca y petricor, que se mezclan con frescas notas herbales, maguey cocido y un toque de caramelo. También emergen matices de frutos tropicales y hierba del campo.',
           boca:
@@ -182,8 +174,7 @@ export const brands: Brand[] = [
         agave: 'Mexicano Sierrudo (Agave americana)',
         price: 1850,
         notes: {
-          vista:
-            'Cristalino con un perlado grueso.',
+          vista: 'Cristalino con un perlado grueso.',
           nariz:
             'Un complejo aroma donde resalta primero las notas frutales de grosella y manzana. Se entrelazan con aromas terrosos de tierra seca y raíces de árbol, acompañados de ligeros matices florales. Se perciben también sutiles notas de pencas de maguey y cacahuate.',
           boca:
@@ -196,12 +187,132 @@ export const brands: Brand[] = [
         agave: 'Espadín · Tobalá · Mexicano',
         price: 1580,
         notes: {
-          vista:
-            'Cristalino de fino aperlado, con brillo intenso.',
+          vista: 'Cristalino de fino aperlado, con brillo intenso.',
           nariz:
             'Fusión armónica de tres personalidades: dulzor del Espadín, elegancia floral del Tobalá y carácter especiado del Mexicano. Notas de maguey cocido, frutos secos y un fondo mineral.',
           boca:
             'Equilibrio excepcional entre dulzura, complejidad y potencia. Entrada frutal que evoluciona hacia especias y minerales. Final largo con persistencia de maguey cocido y un toque ahumado sutil.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'migustoes',
+    name: 'Mi Gusto Es',
+    region: 'Santiago Matatlán',
+    state: 'Oaxaca',
+    description:
+      'Mi Gusto Es es un proyecto familiar fundado en 1984 por Martín García Sernas y Simona López Hernández en Santiago Matatlán, Oaxaca, con el propósito de mantener vivo el legado ancestral del mezcal. Los magueyes se cultivan en pequeñas parcelas agroforestales junto al maíz, siguiendo la tradición de los "Metepantles".',
+    accentColor: '#A0522D',
+    products: [
+      {
+        id: 'mg-espadin',
+        name: 'Espadín',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 850,
+        notes: {
+          vista: 'Cristalino con ligeros matices amarillos.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-espadin-con-gusano',
+        name: 'Espadín con Gusano',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 950,
+        notes: {
+          vista: 'Cristalino con ligeros matices amarillos.',
+          nariz: 'Maguey cocido, aromas cítricos y ahumado ligero con notas del gusano de maguey.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca. El gusano aporta un toque umami distintivo.',
+        },
+      },
+      {
+        id: 'mg-espadin-capon',
+        name: 'Espadín Capón',
+        agave: 'Espadín Capón (Agave angustifolia)',
+        price: 1100,
+        notes: {
+          vista: 'Cristalino con ligeros matices amarillos.',
+          nariz: 'Maguey cocido concentrado, aromas cítricos intensos y ahumado ligero.',
+          boca:
+            'Sabor cítrico más intenso, dulzor pronunciado del agave capón, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-espadin-reposado',
+        name: 'Espadín Reposado',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 1200,
+        notes: {
+          vista: 'Tonos dorados sutiles por el reposo en madera.',
+          nariz: 'Maguey cocido, notas de vainilla y madera, aromas cítricos suaves.',
+          boca:
+            'Sabor redondo y suave, con notas de roble que complementan el dulzor del agave. Persistencia media con final amaderado.',
+        },
+      },
+      {
+        id: 'mg-espadin-anejo',
+        name: 'Espadín Añejo',
+        agave: 'Espadín (Agave angustifolia)',
+        price: 1400,
+        notes: {
+          vista:
+            'Limpio y brillante, con un atractivo tono ámbar profundo, reflejo del añejamiento en barricas de roble blanco americano.',
+          nariz: 'Ligeros aromas a tierra, humo, fruta madura y caramelo.',
+          boca:
+            'Agradable sabor cítrico, suave y de dulzor sutil, ahumado ligero y de gran persistencia en boca.',
+        },
+      },
+      {
+        id: 'mg-tobala',
+        name: 'Tobalá',
+        agave: 'Tobalá (Agave potatorum)',
+        price: 1650,
+        notes: {
+          vista: 'Claro y cristalino, perla mediana de duración corta.',
+          nariz: 'Fuerte presencia fresca, notas de manzana con leve esencias herbal.',
+          boca:
+            'Se aprecia notas ligeras de frutas dulces y flores rojas con final láctico.',
+        },
+      },
+      {
+        id: 'mg-tepeztate',
+        name: 'Tepeztate',
+        agave: 'Tepeztate (Agave marmorata)',
+        price: 1850,
+        notes: {
+          vista: 'Claro y cristalino, perla mediana de duración corta.',
+          nariz: 'Aroma terroso húmedo con sutil frescura.',
+          boca: 'Sabor intenso a frutos secos como pera y mango, con recaída a sabor herbal.',
+        },
+      },
+      {
+        id: 'mg-espadin-pan-de-muerto',
+        name: 'Espadín Pan de Muerto',
+        agave: 'Espadín (Agave angustifolia)',
+        subtitle: 'Edición Especial',
+        price: 1100,
+        notes: {
+          vista: 'Cristalino con tonos dorados sutiles.',
+          nariz: 'Notas especiadas de anís, canela y naranja, evocando el tradicional pan de muerto.',
+          boca:
+            'Sabores dulces y especiados que recuerdan al pan de muerto tradicional. Final cálido y reconfortante.',
+        },
+      },
+      {
+        id: 'mg-espadin-cempasuchil',
+        name: 'Espadín Cempasúchil',
+        agave: 'Espadín (Agave angustifolia)',
+        subtitle: 'Edición Especial',
+        price: 1100,
+        notes: {
+          vista: 'Cristalino con matices dorados brillantes.',
+          nariz: 'Notas florales distintivas de cempasúchil, maguey cocido y un toque herbal.',
+          boca:
+            'Sabor floral único de la flor de cempasúchil que complementa el perfil del mezcal. Final aromático y memorable.',
         },
       },
     ],
@@ -212,7 +323,7 @@ export const brands: Brand[] = [
     region: 'Sierra Juárez',
     state: 'Oaxaca',
     description:
-      'Whiskey mexicano elaborado con maíces nativos y agroecológicos de Oaxaca. 85% maíz nativo libre de transgénicos y 15% cebada malteada, celebrando la biodiversidad y más de 7,000 años de historia agrícola.',
+      'Whiskey Sierra Norte nace para preservar las variedades ancestrales de maíz oaxaqueño y la cultura agrícola que las sostiene. Elaborado con 85% maíz nativo libre de transgénicos y 15% cebada malteada, es un whiskey artesanal que celebra la biodiversidad, el trabajo campesino y más de 7,000 años de historia agrícola en México.',
     accentColor: '#D4A017',
     products: [
       {
@@ -222,9 +333,9 @@ export const brands: Brand[] = [
         price: 1200,
         notes: {
           vista:
-            'Dorado pálido y cristalino, con reflejos luminosos que revelan su pureza.',
+            'Dorado pálido y cristalino, con reflejos luminosos que revelan la suavidad dorada característica del maíz blanco.',
           nariz:
-            'Delicado y sutil. Notas de maíz tostado, vainilla suave y manzana verde. Un perfil fresco y elegante con aire de altura.',
+            'Delicado y sutil. Notas de maíz tostado, vainilla suave y manzana verde. Un perfil fresco y elegante.',
           boca:
             'Entrada suave y mantecosa. Sabores de cereales dulces, almendra y un toque de pimienta blanca. Final limpio y elegante.',
         },
@@ -235,8 +346,7 @@ export const brands: Brand[] = [
         agave: 'Maíz Amarillo Nativo',
         price: 1200,
         notes: {
-          vista:
-            'Ámbar claro con reflejos dorados intensos.',
+          vista: 'Ámbar claro con reflejos dorados intensos.',
           nariz:
             'Robusto y acogedor. Palomitas de maíz tostado, caramelo, miel silvestre y un fondo de roble tostado.',
           boca:
@@ -249,10 +359,8 @@ export const brands: Brand[] = [
         agave: 'Maíz Rojo Nativo',
         price: 1350,
         notes: {
-          vista:
-            'Ámbar con matices rojizos radiantes.',
-          nariz:
-            'Dulce y especiado. Marzapán, nuez moscada y un toque floral de hibisco.',
+          vista: 'Ámbar con matices rojizos radiantes, estructura especiada.',
+          nariz: 'Dulce y especiado. Marzapán, nuez moscada y un toque floral de hibisco.',
           boca:
             'Entrada cálida. Mermelada de frutas, regaliz suave, madera dulce. Equilibrio excelente entre dulzor y astringencia.',
         },
@@ -263,8 +371,7 @@ export const brands: Brand[] = [
         agave: 'Maíz Morado Nativo',
         price: 1350,
         notes: {
-          vista:
-            'Dorado intenso con reflejos caoba profundos.',
+          vista: 'Dorado intenso con reflejos caoba profundos, riqueza frutal evidente.',
           nariz:
             'Frutas tropicales deshidratadas, vainilla pronunciada, caramelo quemado. Perfil seductor.',
           boca:
@@ -277,8 +384,7 @@ export const brands: Brand[] = [
         agave: 'Maíz Negro Nativo',
         price: 1350,
         notes: {
-          vista:
-            'Ámbar profundo con matices cobrizos.',
+          vista: 'Ámbar profundo con matices cobrizos, elegancia tostada.',
           nariz:
             'Complejo y maduro. Frutos rojos deshidratados, chocolate negro amargo, cuero antiguo.',
           boca:
@@ -292,7 +398,7 @@ export const brands: Brand[] = [
         price: 1450,
         notes: {
           vista:
-            'Dorado brillante con reflejos multicolor, testimonio de la diversidad de maíces.',
+            'Dorado brillante con reflejos multicolor, vitalidad única testimonio de la diversidad de maíces.',
           nariz:
             'Complejo y multifacético. Combina notas de todos los maíces: frutas, especias, caramelo y flores.',
           boca:
