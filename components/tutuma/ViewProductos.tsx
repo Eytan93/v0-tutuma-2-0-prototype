@@ -16,7 +16,6 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
 
   const activeBrand = brands.find((b) => b.id === subView)
 
-  // If viewing a specific product
   if (selectedProduct && activeBrand) {
     return (
       <ProductDetail
@@ -32,7 +31,6 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
     )
   }
 
-  // If viewing a specific brand
   if (activeBrand) {
     return (
       <BrandView
@@ -43,11 +41,10 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
     )
   }
 
-  // Main grid view
   return (
     <main className="min-h-screen bg-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-4 font-sans">
+        <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-4 font-sans font-semibold">
           Explorador Narrativo
         </p>
         <h1 className="font-serif text-6xl md:text-7xl text-[#1A1A1A] mb-4 text-balance font-bold">
@@ -66,11 +63,11 @@ export default function ViewProductos({ onNavigate }: ViewProductosProps) {
               className="group bg-[#F3F0DF] hover:bg-[#1A1A1A] transition-colors duration-500 p-10 text-left"
             >
               <div
-                className="w-1.5 h-10 mb-8 transition-none"
+                className="w-1.5 h-10 mb-8"
                 style={{ backgroundColor: brand.accentColor }}
               />
               <p
-                className="text-xs tracking-[0.3em] uppercase mb-2 font-semibold font-sans group-hover:opacity-80 transition-opacity"
+                className="text-xs tracking-[0.3em] uppercase mb-2 font-semibold font-sans"
                 style={{ color: brand.accentColor }}
               >
                 {brand.region} · {brand.state}
@@ -107,25 +104,9 @@ function BrandView({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        {/* Back button - clearly visible */}
-        <button
-          onClick={onBack}
-          className="flex items-center gap-3 text-[#FACC15] hover:text-[#F3F0DF] transition-colors text-sm tracking-[0.15em] uppercase font-semibold font-sans mb-16 py-3"
-        >
-          <ArrowLeft size={18} />
-          Todos los Colectivos
-        </button>
-
-        {/* Brand header */}
         <div className="mb-20">
-          <div
-            className="w-1.5 h-12 mb-8"
-            style={{ backgroundColor: brand.accentColor }}
-          />
-          <p
-            className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans"
-            style={{ color: brand.accentColor }}
-          >
+          <div className="w-1.5 h-12 mb-8" style={{ backgroundColor: brand.accentColor }} />
+          <p className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans" style={{ color: brand.accentColor }}>
             {brand.region} · {brand.state}
           </p>
           <h1 className="font-serif text-6xl md:text-7xl mb-6 font-bold">{brand.name}</h1>
@@ -134,73 +115,56 @@ function BrandView({
           </p>
         </div>
 
-        {/* Products grid */}
         <p className="text-xs tracking-[0.4em] uppercase text-[#F3F0DF]/40 mb-8 font-semibold font-sans">
           {brand.products.length} Expresiones
         </p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#2C2C2C]">
           {brand.products.map((product) => (
             <button
               key={product.id}
               onClick={() => onSelectProduct(product)}
-              className="group bg-[#1A1A1A] hover:bg-[#2C2C2C] p-10 md:p-12 text-left transition-all duration-300 flex flex-col gap-6 border-l-2"
-              style={{ borderColor: brand.accentColor + '40' }}
+              className="group bg-[#1A1A1A] hover:bg-[#2C2C2C] p-10 md:p-12 text-left transition-all duration-300 flex flex-col gap-6"
             >
               <div className="flex-1">
-                <h3 className="font-serif text-2xl md:text-3xl text-[#F3F0DF] group-hover:text-[#FACC15] transition-colors duration-300 mb-2 font-bold">
+                <h3 className="font-serif text-2xl md:text-3xl text-[#F3F0DF] group-hover:text-[#FACC15] transition-colors mb-2 font-bold">
                   {product.name}
                 </h3>
-                {product.agave && (
-                  <p className="text-xs tracking-[0.2em] text-[#F3F0DF]/40 group-hover:text-[#F3F0DF]/60 font-sans mb-6 transition-colors font-semibold">
-                    {product.agave}
-                  </p>
+                <p className="text-xs tracking-[0.2em] text-[#F3F0DF]/40 font-sans mb-6 font-semibold">
+                  {product.agave}
+                </p>
+                {product.notes.vista && (
+                  <div className="mb-4">
+                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 font-sans mb-1 font-semibold">Vista</p>
+                    <p className="text-sm leading-relaxed text-[#F3F0DF]/50 line-clamp-2 font-serif">{product.notes.vista}</p>
+                  </div>
                 )}
-                <div className="space-y-4 mb-8">
-                  {product.notes.vista && (
-                    <div>
-                      <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
-                        Vista
-                      </p>
-                      <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
-                        {product.notes.vista}
-                      </p>
-                    </div>
-                  )}
-                  {product.notes.nariz && (
-                    <div>
-                      <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
-                        Nariz
-                      </p>
-                      <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
-                        {product.notes.nariz}
-                      </p>
-                    </div>
-                  )}
-                  {!product.notes.vista && !product.notes.nariz && product.notes.boca && (
-                    <div>
-                      <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 group-hover:text-[#FACC15] transition-colors font-sans mb-1 font-semibold">
-                        Perfil
-                      </p>
-                      <p className="text-xs md:text-sm leading-relaxed text-[#F3F0DF]/50 group-hover:text-[#F3F0DF]/70 transition-colors line-clamp-2 font-serif">
-                        {product.notes.boca}
-                      </p>
-                    </div>
-                  )}
-                </div>
+                {product.notes.nariz && (
+                  <div className="mb-4">
+                    <p className="text-[10px] tracking-[0.3em] uppercase text-[#F3F0DF]/30 font-sans mb-1 font-semibold">Nariz</p>
+                    <p className="text-sm leading-relaxed text-[#F3F0DF]/50 line-clamp-2 font-serif">{product.notes.nariz}</p>
+                  </div>
+                )}
               </div>
               <div className="flex items-center justify-between pt-6 border-t border-[#F3F0DF]/10">
-                <div className="text-[11px] tracking-[0.15em] uppercase text-[#F3F0DF]/30 group-hover:text-[#F3F0DF]/50 transition-colors font-sans font-semibold">
-                  {product.notes.vista && product.notes.nariz ? 'Vista · Nariz · Boca' : 'Perfil'}
-                </div>
                 <div className="flex items-center gap-2 text-[#FACC15] group-hover:text-[#F3F0DF] transition-colors">
-                  <span className="text-xs tracking-[0.2em] uppercase font-sans font-semibold">
-                    Ver completo
-                  </span>
+                  <span className="text-xs tracking-[0.2em] uppercase font-sans font-semibold">Ver completo</span>
                   <ArrowRight size={12} />
                 </div>
               </div>
             </button>
           ))}
+        </div>
+
+        {/* Back button at the bottom */}
+        <div className="mt-20 pt-12 border-t border-[#F3F0DF]/10">
+          <button
+            onClick={onBack}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded border border-[#FACC15] text-[#FACC15] hover:bg-[#FACC15] hover:text-[#1A1A1A] transition-all font-semibold text-sm"
+          >
+            <ArrowLeft size={16} />
+            Todos los Colectivos
+          </button>
         </div>
       </div>
     </main>
@@ -229,43 +193,20 @@ function ProductDetail({
   return (
     <main className="min-h-screen bg-[#1A1A1A] text-[#F3F0DF] pt-24 pb-24 px-6 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
-        {/* Breadcrumb navigation - clearly visible */}
-        <div className="flex items-center gap-4 mb-16">
-          <button
-            onClick={onBackToBrands}
-            className="flex items-center gap-3 text-[#FACC15] hover:text-[#F3F0DF] transition-colors text-sm tracking-[0.15em] uppercase font-semibold font-sans py-3"
-          >
-            <ArrowLeft size={18} />
-            Todos los Colectivos
-          </button>
-          <span className="text-[#F3F0DF]/30 text-sm">/</span>
-          <button
-            onClick={onBack}
-            className="text-[#F3F0DF]/60 hover:text-[#FACC15] transition-colors text-sm tracking-[0.15em] uppercase font-semibold font-sans py-3"
-          >
-            {brand.name}
-          </button>
-        </div>
-
-        {/* Product header */}
-        <div
-          className="w-1.5 h-10 mb-8"
-          style={{ backgroundColor: brand.accentColor }}
-        />
-        <p
-          className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans"
-          style={{ color: brand.accentColor }}
-        >
+        <div className="w-1.5 h-10 mb-8" style={{ backgroundColor: brand.accentColor }} />
+        <p className="text-xs tracking-[0.4em] uppercase mb-4 font-semibold font-sans" style={{ color: brand.accentColor }}>
           {brand.name} · {brand.region}, {brand.state}
         </p>
         <h1 className="font-serif text-5xl md:text-7xl mb-4 font-bold">{product.name}</h1>
-        {product.agave && (
-          <p className="font-sans text-sm tracking-[0.25em] uppercase text-[#F3F0DF]/40 mb-16 font-semibold">
-            {product.agave}
+        {product.subtitle && (
+          <p className="text-sm tracking-[0.2em] uppercase font-sans font-semibold mb-4" style={{ color: brand.accentColor }}>
+            {product.subtitle}
           </p>
         )}
+        <p className="font-sans text-sm tracking-[0.25em] uppercase text-[#F3F0DF]/40 mb-16 font-semibold">
+          {product.agave}
+        </p>
 
-        {/* Tasting notes */}
         <div className="border-t border-[#F3F0DF]/10 space-y-px bg-[#0A0A0A]">
           {sensorNotes.map(({ label, icon: Icon, content }, idx) => (
             <div
@@ -297,7 +238,6 @@ function ProductDetail({
           ))}
         </div>
 
-        {/* CTA */}
         <div className="mt-16">
           <button
             onClick={onGoToTienda}
@@ -305,6 +245,24 @@ function ProductDetail({
           >
             Ver Disponibilidad en Tienda
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-200" />
+          </button>
+        </div>
+
+        {/* Breadcrumb navigation at the bottom */}
+        <div className="mt-20 pt-12 border-t border-[#F3F0DF]/10 flex items-center gap-3 flex-wrap">
+          <button
+            onClick={onBackToBrands}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded border border-[#FACC15] text-[#FACC15] hover:bg-[#FACC15] hover:text-[#1A1A1A] transition-all font-semibold text-sm"
+          >
+            <ArrowLeft size={16} />
+            Todos los Colectivos
+          </button>
+          <span className="text-[#F3F0DF]/30">/</span>
+          <button
+            onClick={onBack}
+            className="px-4 py-2 rounded border border-[#F3F0DF]/30 text-[#F3F0DF] hover:border-[#FACC15] hover:text-[#FACC15] transition-all font-semibold text-sm"
+          >
+            {brand.name}
           </button>
         </div>
       </div>
