@@ -38,7 +38,7 @@ const faqs = [
 
 export default function ViewExperiencias() {
   const handleReserve = () => {
-    window.open('https://tidycal.com/tutumahorizontesustentable', '_blank')
+    window.open('https://tidycal.com/tutumahorizontesustentable/experiencia', '_blank')
   }
 
   return (
