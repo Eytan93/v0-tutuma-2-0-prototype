@@ -22,12 +22,14 @@ const includes = [
   { icon: UserCheck, text: 'Acompañamiento del equipo de Tutuma' },
 ]
 
+const BASE_URL = 'https://tidycal.com/tutumahorizontesustentable'
+
 const groupTiers = [
-  { people: 2, total: '2,600' },
-  { people: 3, total: '3,900' },
-  { people: 4, total: '5,200' },
-  { people: 5, total: '6,500' },
-  { people: 6, total: '7,800' },
+  { people: 2, total: '2,600', url: `${BASE_URL}/experiencia-m48rv27` },
+  { people: 3, total: '3,900', url: `${BASE_URL}/experiencia-19y8l4v` },
+  { people: 4, total: '5,200', url: `${BASE_URL}/experiencia` },
+  { people: 5, total: '6,500', url: `${BASE_URL}/experiencia-1k890jn-3el98n0` },
+  { people: 6, total: '7,800', url: `${BASE_URL}/experiencia-1k890jn` },
 ]
 
 const faqs = [
@@ -45,8 +47,8 @@ const faqs = [
 ]
 
 export default function ViewExperiencias() {
-  const handleReserve = () => {
-    window.open('https://tidycal.com/tutumahorizontesustentable/experiencia', '_blank')
+  const handleReserve = (url: string = BASE_URL) => {
+    window.open(url, '_blank')
   }
 
   return (
@@ -83,7 +85,7 @@ export default function ViewExperiencias() {
             </p>
 
             <button
-              onClick={handleReserve}
+              onClick={() => handleReserve()}
               className="w-full md:w-auto px-12 py-5 text-sm tracking-[0.2em] uppercase font-bold transition-all duration-300 font-sans bg-[#FACC15] text-[#1A1A1A] hover:bg-[#F3F0DF]"
             >
               Reservar Ahora
@@ -147,10 +149,10 @@ export default function ViewExperiencias() {
           La experiencia de 2.5 horas en La Casa del Maíz y del Maguey se reserva por grupo completo, a $1,300 MXN por persona. Elige el horario según el número de asistentes.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[#2C2C2C]">
-          {groupTiers.map(({ people, total }) => (
+          {groupTiers.map(({ people, total, url }) => (
             <button
               key={people}
-              onClick={handleReserve}
+              onClick={() => handleReserve(url)}
               className="group bg-[#1A1A1A] hover:bg-[#FACC15] transition-colors duration-300 p-8 text-left"
             >
               <div className="flex items-center gap-2 mb-6">
@@ -224,7 +226,7 @@ export default function ViewExperiencias() {
             Experiencia de 2.5 Horas en La Casa del Maíz y del Maguey
           </p>
           <button
-            onClick={handleReserve}
+            onClick={() => handleReserve()}
             className="px-12 py-5 text-sm tracking-[0.2em] uppercase font-bold transition-all duration-300 font-sans bg-[#FACC15] text-[#1A1A1A] hover:bg-[#F3F0DF]"
           >
             Reservar Ahora
