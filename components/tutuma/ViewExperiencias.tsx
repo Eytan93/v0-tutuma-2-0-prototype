@@ -22,6 +22,14 @@ const includes = [
   { icon: UserCheck, text: 'Acompañamiento del equipo de Tutuma' },
 ]
 
+const groupTiers = [
+  { people: 2, total: '2,600' },
+  { people: 3, total: '3,900' },
+  { people: 4, total: '5,200' },
+  { people: 5, total: '6,500' },
+  { people: 6, total: '7,800' },
+]
+
 const faqs = [
   { q: '¿Es una cata de mezcal?', a: 'No es una cata tradicional. Es una experiencia sensorial que va más allá de calificar sabores.' },
   { q: '¿Qué hace diferente esta experiencia?', a: 'Cada destilado funciona como una entrada al territorio: al maíz, al maguey, al tiempo, al trabajo campesino.' },
@@ -132,10 +140,37 @@ export default function ViewExperiencias() {
         </div>
       </section>
 
+      {/* Pricing by group size */}
+      <section className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto py-16 border-b border-[#2C2C2C]">
+        <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-4 font-semibold font-sans">Precio por grupo</p>
+        <p className="font-sans text-base text-[#F3F0DF]/50 mb-12 max-w-2xl">
+          La experiencia de 2.5 horas en La Casa del Maíz y del Maguey se reserva por grupo completo, a $1,300 MXN por persona. Elige el horario según el número de asistentes.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[#2C2C2C]">
+          {groupTiers.map(({ people, total }) => (
+            <button
+              key={people}
+              onClick={handleReserve}
+              className="group bg-[#1A1A1A] hover:bg-[#FACC15] transition-colors duration-300 p-8 text-left"
+            >
+              <div className="flex items-center gap-2 mb-6">
+                <Users size={16} className="text-[#6B7F5E] group-hover:text-[#1A1A1A] transition-colors" />
+                <span className="text-[11px] tracking-[0.2em] uppercase text-[#F3F0DF]/40 group-hover:text-[#1A1A1A] font-semibold font-sans transition-colors">
+                  {people} personas
+                </span>
+              </div>
+              <p className="font-serif text-3xl text-[#F3F0DF] group-hover:text-[#1A1A1A] font-bold leading-none mb-1 transition-colors">
+                ${total}
+              </p>
+              <p className="text-xs text-[#F3F0DF]/40 group-hover:text-[#1A1A1A]/70 font-sans transition-colors">MXN total</p>
+            </button>
+          ))}
+        </div>
+      </section>
+
       {/* Location */}
       <section className="px-6 md:px-16 lg:px-24 max-w-7xl mx-auto py-16 border-b border-[#2C2C2C]">
         <p className="text-xs tracking-[0.4em] uppercase text-[#6B7F5E] mb-8 font-semibold font-sans">Ubicación</p>
-        <div className="bg-[#2C2C2C] p-8 md:p-12">
           <h3 className="font-serif text-2xl md:text-3xl text-[#F3F0DF] mb-4 font-bold">La Casa del Maíz y del Maguey</h3>
           <p className="font-sans text-base text-[#F3F0DF]/60 mb-6">
             Camino a la Chigulera #10G, San Felipe del Agua<br />
