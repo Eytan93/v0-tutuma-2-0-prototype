@@ -194,7 +194,6 @@ export default function ViewExperiencias() {
               info@horizontesustentable.com
             </a>
           </div>
-        </div>
       </section>
 
       {/* FAQs */}
