@@ -33,17 +33,17 @@ const groupTiers = [
 ]
 
 const faqs = [
-  { q: '¿Es una cata de mezcal?', a: 'No es una cata tradicional. Es una experiencia sensorial que va más allá de calificar sabores.' },
-  { q: '¿Qué hace diferente esta experiencia?', a: 'Cada destilado funciona como una entrada al territorio: al maíz, al maguey, al tiempo, al trabajo campesino.' },
-  { q: '¿Incluye transporte?', a: 'Sí, incluye transporte redondo dentro de Oaxaca.' },
-  { q: '¿Dónde se realiza?', a: 'En la Casa del Maíz y del Maguey, San Felipe del Agua, Oaxaca.' },
-  { q: '¿Cuánto dura?', a: '1 hora 45 minutos a 2 horas, más tiempo de traslado.' },
-  { q: '¿En qué idioma se realiza?', a: 'En español. Para personas de habla inglesa, contamos con acompañamiento en inglés.' },
-  { q: '¿Necesito saber de mezcal o whiskey?', a: 'No, la experiencia está diseñada para todos los niveles.' },
-  { q: '¿Incluye comida?', a: 'Incluye bocados e intervenciones sensoriales diseñadas para acompañar el recorrido.' },
-  { q: '¿Pueden asistir menores de edad?', a: 'No, es exclusiva para mayores de 18 años.' },
-  { q: '¿Puedo reservar si viajo solo/a?', a: 'Sí, puedes reservar individualmente.' },
-  { q: '¿Puedo reservar para más de 6 personas?', a: 'Para grupos más grandes, contáctanos directamente.' },
+  { q: '¿Es una cata de mezcal?', a: 'No exactamente. Probamos mezcal y whiskey de maíz nativo, pero no desde la lógica tradicional de una cata. La experiencia está diseñada para entender el sistema detrás del destilado: el maguey, el maíz, el territorio, los productores y las decisiones que hacen posible cada expresión.' },
+  { q: '¿Qué hace diferente esta experiencia de otros tours de mezcal en Oaxaca?', a: 'A diferencia de muchos tours de mezcal en Oaxaca, esta experiencia no visita varios palenques ni se centra únicamente en el proceso técnico. Se realiza en la Casa del Maíz y del Maguey, en San Felipe del Agua, y propone un recorrido sensorial con mezcales, whiskeys de maíz nativo, bocados e intervenciones diseñadas para entender el territorio detrás de cada destilado.' },
+  { q: '¿Incluye transporte?', a: 'Sí. La experiencia incluye transporte redondo dentro de Oaxaca. Después de reservar, nos pondremos en contacto contigo para confirmar el punto de encuentro o recolección.' },
+  { q: '¿Dónde se realiza?', a: 'En la Casa del Maíz y del Maguey, en San Felipe del Agua, Oaxaca. La dirección exacta se comparte al confirmar la reservación.' },
+  { q: '¿Cuánto dura?', a: 'La experiencia dura aproximadamente 1 hora 45 minutos a 2 horas, más el tiempo de traslado.' },
+  { q: '¿En qué idioma se realiza?', a: 'La experiencia se conduce en español. Para personas de habla inglesa, contamos con acompañamiento en inglés durante todo el recorrido, realizado por una persona dedicada a la traducción y al seguimiento de la experiencia. Esto permite que quienes no hablan español puedan seguir la experiencia completa sin perder el sentido del recorrido.' },
+  { q: '¿Necesito saber de mezcal o whiskey?', a: 'No. La experiencia está pensada para personas con o sin conocimiento previo de mezcal o whiskey. No se trata de evaluar técnicamente los destilados, sino de probar distinto y entender el sistema que los hace posibles.' },
+  { q: '¿Incluye comida?', a: 'Incluye bocados diseñados como parte de la experiencia sensorial. No reemplaza una comida completa.' },
+  { q: '¿Pueden asistir menores de edad?', a: 'No. Esta experiencia incluye consumo de bebidas alcohólicas y es exclusiva para personas mayores de 18 años.' },
+  { q: '¿Puedo reservar si viajo solo/a?', a: 'Sí, pero las reservas individuales quedan sujetas a disponibilidad, ya que la experiencia se realiza con un mínimo de 2 personas. Si viajas solo/a, contáctanos para revisar si podemos integrarte a un grupo abierto o proponerte una opción disponible.' },
+  { q: '¿Puedo reservar para más de 6 personas?', a: 'Sí, pero los grupos de más de 6 personas requieren revisión previa de disponibilidad y logística. Contáctanos directamente para revisar opciones.' },
 ]
 
 export default function ViewExperiencias() {
