@@ -81,9 +81,18 @@ export default function ViewExperiencias() {
               Reservar Ahora
             </button>
 
-            <div className="mt-12 p-6 bg-[#2C2C2C] border-l-4 border-[#6B7F5E]">
+            <div className="mt-12 p-6 bg-[#2C2C2C] border-l-4 border-[#6B7F5E] space-y-4">
+              <p className="text-[11px] tracking-[0.2em] uppercase text-[#FACC15] font-semibold font-sans">
+                Antes de reservar
+              </p>
               <p className="text-sm text-[#F3F0DF]/70 leading-relaxed font-sans">
-                Para reservar, selecciona el horario disponible y completa tus datos. Después te contactaremos por WhatsApp para confirmar el número de personas, transporte y total a pagar. La reserva queda confirmada únicamente una vez realizado el pago.
+                Esta experiencia incluye consumo de bebidas alcohólicas y es exclusiva para personas mayores de 18 años. El precio es de <strong className="text-[#F3F0DF]">$1,300 MXN por persona</strong>.
+              </p>
+              <p className="text-sm text-[#F3F0DF]/70 leading-relaxed font-sans">
+                Para reservar, selecciona el horario disponible y completa tus datos. Después te contactaremos por WhatsApp para confirmar el número de personas, transporte redondo y total a pagar. La reserva queda confirmada únicamente una vez realizado el pago correspondiente.
+              </p>
+              <p className="text-sm text-[#F3F0DF]/70 leading-relaxed font-sans">
+                Una vez enviado el enlace de pago, el horario se mantendrá bloqueado durante <strong className="text-[#F3F0DF]">6 horas</strong>. Si no recibimos el pago dentro de ese plazo, será liberado automáticamente.
               </p>
             </div>
           </div>
